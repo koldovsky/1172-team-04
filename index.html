@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="shortcut icon" type="image/png" href="pic/header-pic/favicon_32.png" sizes="32x32">
     <link
       rel="shortcut icon"
       href="https://placekitten.com/96/139"
@@ -19,16 +20,20 @@
   <body>
     <!--Simkovsky--->
     <header class="header">
-      <nav
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="common.header-nav.partial.html"
-      ></nav>
-    </header>
+          <nav
+          data-hx-trigger="load"
+          data-hx-swap="outerHTML"
+          data-hx-get="common.header-nav.partial.html"
+        ></nav>
+      </header>
     <!--Simkovsky--->
+
+    <!-- Valko -->
     <main>
-      <!--Volodymyr Viienko-->
-      <section  data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.section-question.partial.html"></section>
+      <section data-hx-trigger="load"
+       data-hx-swap="outerHTML" data-hx-get="common.main.wine-selection.partial.html">
+      </section>
     </main>
+    <!-- Valko -->
   </body>
 </html>
