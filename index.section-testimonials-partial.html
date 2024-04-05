@@ -1,56 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
 
-  <body>
-    <section style="background-image: url('images/background\ grape.webp')">
-      <div>
-        <h1>What Our Wine-Lovers Say</h1>
-        <div>
-          <img src="images/emblem.svg" alt="emblem" />
-        </div>
-        <p>
-          Wine is a bottled poetry. Read some stories from our customers below.
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <section class="testimonials" style="background-image: url('images/background\ grape.webp')">
+    <div class="testimonials__header">
+      <h1 class="testimonials__title">What Our Wine-Lovers Say</h1>
+      <div class="testimonials__emblem">
+        <img src="images/emblem.svg" alt="emblem" />
+      </div>
+      <p class="testimonials__intro">
+        Wine is a bottled poetry. Read some stories from our customers below.
+      </p>
+    </div>
+
+    <div class="testimonials__content">
+      <div class="testimonials__item">
+        <p class="testimonials__quote">
+          "I really like to please myself with good wine with a rich taste.
+          Therefore, from time to time, I order wine directly from the
+          CaliWines winery. I also buy Chardonnay and Cabernet for family
+          holidays. We are completely delighted with the amazing taste of
+          these wines, which we want to enjoy endlessly."
         </p>
       </div>
 
-      <div>
-        <div>
-          <p>
-            "I really like to please myself with good wine with a rich taste.
-            Therefore, from time to time, I order wine directly from the
-            CaliWines winery. I also buy Chardonnay and Cabernet for family
-            holidays. We are completely delighted with the amazing taste of
-            these wines, which we want to enjoy endlessly."
-          </p>
-        </div>
-
-        <div>
-          <p>
-            "We were to hold a responsible event with a buffet table and wanted
-            to surprise our guests with some local products. I recalled that we
-            have the CaliWines winery in California and ordered 10 bottles of
-            Chardonnay. Our guests were delighted and asked for the name of the
-            producer!"
-          </p>
-        </div>
-
-        <div>
-          <p>
-            "Our restaurant has been cooperating with this winery for over 10
-            years. We order the whole range of wines from them. We are
-            completely satisfied with the quality of the wine supplied to us.
-            And our guests often choose CaliWines from our wine menu."
-          </p>
-        </div>
+      <div class="testimonials__item">
+        <p class="testimonials__quote">
+          "We were to hold a responsible event with a buffet table and wanted
+          to surprise our guests with some local products. I recalled that we
+          have the CaliWines winery in California and ordered 10 bottles of
+          Chardonnay. Our guests were delighted and asked for the name of the
+          producer!"
+        </p>
       </div>
 
-      <button>❮</button>
-      <button>❯</button>
-    </section>
-  </body>
+      <div class="testimonials__item">
+        <p class="testimonials__quote">
+          "Our restaurant has been cooperating with this winery for over 10
+          years. We order the whole range of wines from them. We are
+          completely satisfied with the quality of the wine supplied to us.
+          And our guests often choose CaliWines from our wine menu."
+        </p>
+      </div>
+    </div>
+
+    <button class="testimonials__button testimonials__button--prev">❮</button>
+    <button class="testimonials__button testimonials__button--next">❯</button>
+  </section>
+
+</body>
+
 </html>
