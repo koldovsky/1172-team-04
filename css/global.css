@@ -8,6 +8,8 @@
 
 :root {
   font-family: "Rubik", sans-serif;
+  color: #ffffff;
+  background-color: #261e1c;
   scroll-behavior: smooth;
 }
 
@@ -23,9 +25,14 @@ h2 {
   font-family: "Great Vibes", cursive;
   font-weight: 400;
   font-style: normal;
+  color: #c8693a;
 }
 
 img {
   display: block;
   width: 100%;
+}
+
+p {
+  color: #898082;
 }
