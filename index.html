@@ -8,22 +8,18 @@
     <link
       rel="shortcut icon"
       type="image/png"
-      href="pic/header-pic/favicon_32.png"
+      href="images/header/favicon_32.png"
       sizes="32x32"
-    />
-    <link
-      rel="shortcut icon"
-      href="https://placekitten.com/96/139"
-      type="image/x-icon"
     />
     <script
       src="https://unpkg.com/htmx.org@1.9.10"
       integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
-    <!--Simkovsky--->
+    <!--blok 1 | Simkovsky--->
     <header class="header">
       <nav
         data-hx-trigger="load"
@@ -31,9 +27,8 @@
         data-hx-get="common.header-nav.partial.html"
       ></nav>
     </header>
-    <!--Simkovsky--->
+    <!--blok 1 |Simkovsky--->
 
-    <!-- Valko -->
     <main>
       <!-- Oleh Soltysyak -->
       <section
@@ -42,31 +37,32 @@
         data-hx-get="wine-buying-guide-partial.html"
       ></section>
       <!-- Oleh Soltysyak -->
+      <!-- Valko Block 6 -->
       <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
         data-hx-get="common.main.wine-selection.partial.html"
       ></section>
-      <!-- Volodymyr -->
+      <!-- Valko Block 6 -->
+      <!-- Блок 11  Volodymyr Viienko -->
       <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
-        data-hx-get="index.section-question.partial.html"
+        data-hx-get="index.section-faq.partial.html"
       ></section>
-      <!-- Volodymyr Viienko -->
-
+      <!-- Блок 11 Volodymyr Viienko -->
 
       <!--Dmytro Vasylyshyn Freym-14 2 cards red and white winess with linc to shop red and white wines and section with personal dicount-->
       <section
-      data-hx-trigger="load"
-      data-hx-swap="outerHTML"
-      data-hx-get="index.section-red-white-wines-card.partial.html"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.section-red-white-wines-card.partial.html"
       ></section>
-      
+
       <section
-      data-hx-trigger="load"
-      data-hx-swap="outerHTML"
-      data-hx-get="index.section-personal-discount.partial.html"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.section-personal-discount.partial.html"
       ></section>
       <!---->
 
@@ -74,10 +70,39 @@
       <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
-        data-hx-get="winery-timeline-partial.html"
+        data-hx-get="index.section-winery-timeline-partial.html"
       ></section>
       <!--Блок 8 | Nazar Tiushka -->
+
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.section-testimonials-partial.html"
+      ></section>
+      <!--Блок 10 | Nazar Tiushka -->
+      <!--Блок 15 | Nataliia Zinchenko-->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.section-awards.html"
+      ></section>
+      <!--/Блок 15 | Nataliia Zinchenko-->
+
+      <!-- Block 3 start | Serhii Zamorii-->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.section-capabilities.partial.html"
+      ></section>
+      <!-- Block 3 end | Serhii Zamorii-->
+
+      <!-- Block 7 start | Serhii Zamorii-->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.section-best-deals.partial.html"
+      ></section>
+      <!-- Block 7 end | Serhii Zamorii-->
     </main>
-    <!-- Valko -->
   </body>
 </html>
