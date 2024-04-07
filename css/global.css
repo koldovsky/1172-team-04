@@ -17,11 +17,15 @@
   --section-title-color: #c8693a;
   --button-filled-color: #c8693a;
   --button-blank-color: #ffffff;
-  --section-background-color: #261e1c;
+  --section-global-background-color: #261e1c;
+  --section-timeless-background-color: #241917;
+  --section-join-background-color: #1a1512;
+  --footer-contacts-background-color: #1b1613;
+  --footer-copyrights-background-color: #130f0e;
   font-family: "Rubik", sans-serif;
   scroll-behavior: smooth;
   color: var(--text-bright-color);
-  background-color: var(--section-background-color);
+  background-color: var(--section-global-background-color);
 }
 
 h1,
