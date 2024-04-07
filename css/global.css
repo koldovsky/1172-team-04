@@ -17,12 +17,11 @@
   --section-title-color: #c8693a;
   --button-filled-color: #c8693a;
   --button-blank-color: #ffffff;
-  --section-background-color-light: #261e1c;
-  --section-background-color-dark: #241917;
+  --section-background-color: #261e1c;
   font-family: "Rubik", sans-serif;
   scroll-behavior: smooth;
-  color: #ffffff;
-  background-color: #261e1c;
+  color: var(--text-bright-color);
+  background-color: var(--section-background-color);
 }
 
 h1,
