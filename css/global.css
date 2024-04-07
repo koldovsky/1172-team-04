@@ -7,10 +7,22 @@
 }
 
 :root {
+  --text-bright-color: #ffffff;
+  --text-dark-color: #898022;
+  --icon-color: #c8693a;
+  --icon-background-dark-color: #211b18;
+  --icon-background-light-color: #342e2e;
+  --input-text-background-color: #25211f;
+  --decor-elements-color: #c8693a;
+  --section-title-color: #c8693a;
+  --button-filled-color: #c8693a;
+  --button-blank-color: #ffffff;
+  --section-background-color-light: #261e1c;
+  --section-background-color-dark: #241917;
   font-family: "Rubik", sans-serif;
+  scroll-behavior: smooth;
   color: #ffffff;
   background-color: #261e1c;
-  scroll-behavior: smooth;
 }
 
 h1,
