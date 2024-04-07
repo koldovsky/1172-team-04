@@ -36,7 +36,7 @@ h2 {
   font-family: "Great Vibes", cursive;
   font-weight: 400;
   font-style: normal;
-  color: #c8693a;
+  color: var(--section-title-color);
 }
 
 img {
@@ -44,6 +44,3 @@ img {
   width: 100%;
 }
 
-p {
-  color: #898082;
-}
