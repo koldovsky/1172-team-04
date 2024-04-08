@@ -18,16 +18,17 @@
     ></script>
     <link rel="stylesheet" href="css/index.css" />
   </head>
+
   <body>
     <!--blok 1 | Simkovsky--->
     <header class="header">
       <nav
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
-        data-hx-get="common.header-nav.partial.html"
+        data-hx-get="common.header.partial.html"
       ></nav>
     </header>
-    <!--blok 1 |Simkovsky--->
+    <!--blok 1 end |Simkovsky--->
 
     <main>
       <!-- Khrystyna Vehera section after header -->
@@ -63,7 +64,7 @@
       <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
-        data-hx-get="common.main.wine-selection.partial.html"
+        data-hx-get="index.section-wine-selection.partial.html"
       ></section>
       <!-- Valko Block 6 -->
 
@@ -100,9 +101,9 @@
       <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
-        data-hx-get="index.section-faq.partial.html"
+        data-hx-get="index.faq.partial.html"
       ></section>
-      <!-- Блок 11 Volodymyr Viienko -->
+      <!--  Volodymyr Viienko -->
 
       <!--Блок 12 | Nataliia Zinchenko-->
       <section
@@ -157,9 +158,14 @@
       <!--Блок 18 -->
 
       <!--Блок 19 | Simkovsky--->
-      <section
-      ></section>
-      <!--Блок 19 | Simkovsky--->
+      <footer class="footer">
+        <section
+          data-hx-trigger="load"
+          data-hx-swap="outerHTML"
+          data-hx-get="common.footer.partial.html"
+        ></section>
+      </footer>
+      <!--Блок 19 end | Simkovsky--->
       
     </main>
   </body>
