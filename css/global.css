@@ -7,10 +7,25 @@
 }
 
 :root {
+  --text-bright-color: #ffffff;
+  --text-dark-color: #898022;
+  --icon-color: #c8693a;
+  --icon-background-dark-color: #211b18;
+  --icon-background-light-color: #342e2e;
+  --input-text-background-color: #25211f;
+  --decor-elements-color: #c8693a;
+  --section-title-color: #c8693a;
+  --button-filled-color: #c8693a;
+  --button-blank-color: #ffffff;
+  --section-global-background-color: #261e1c;
+  --section-timeless-background-color: #241917;
+  --section-join-background-color: #1a1512;
+  --footer-contacts-background-color: #1b1613;
+  --footer-copyrights-background-color: #130f0e;
   font-family: "Rubik", sans-serif;
-  color: #ffffff;
-  background-color: #261e1c;
   scroll-behavior: smooth;
+  color: var(--text-bright-color);
+  background-color: var(--section-global-background-color);
 }
 
 h1,
@@ -25,7 +40,7 @@ h2 {
   font-family: "Great Vibes", cursive;
   font-weight: 400;
   font-style: normal;
-  color: #c8693a;
+  color: var(--section-title-color);
 }
 
 img {
@@ -33,6 +48,3 @@ img {
   width: 100%;
 }
 
-p {
-  color: #898082;
-}
