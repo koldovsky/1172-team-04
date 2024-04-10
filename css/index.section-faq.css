@@ -1,30 +1,79 @@
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Prata&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-
-
-.faq__title{
-    font-family: "Great Vibes", undefined;
+.faq {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.faq__all {
+  display: grid;
+  padding: 24px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.faq__title {
+  font-family: "Great Vibes", undefined;
   font-weight: 400;
   font-size: 21px;
   font-style: normal;
-  color: rgb(200, 105, 58);
+  color: var(--section-title-color);
+  position: relative;
+  max-width: 100%;
+  word-wrap: break-word;
 }
-.faq__subtitle{
-    font-family: "Prata", serif;
-    font-weight: 400;
-    font-size: 41px;
-    font-style: normal;
-    color: rgb(255, 255, 255);
+.faq__subtitle {
+  font-family: "Prata", serif;
+  font-weight: 400;
+  font-size: 41px;
+  font-style: normal;
+  color: var(--text-bright-color);
+  position: relative;
+  max-width: 100%;
+  word-wrap: break-word;
+  margin-top: 20px;
 }
-.faq__question-title{
-    font-family: "Prata", serif;
-    font-weight: 400;
-    font-size: 22px;
-    font-style: normal;
+.faq__image {
+  position: relative;
+  margin-top: 25px;
+  padding-top: 13px;
+  box-sizing: border-box;
+  border-image-repeat: stretch;
+  width: auto;
 }
-.faq__question-answer{
-    font-family: "Rubik", sans-serif;
-    color: #898082;
-    font-weight: 400;
-    font-size: 16px;
-    font-style: normal;
+.faq__list {
+  list-style-type: none;
+  margin-top: 20px;
+}
+.faq__questions {
+  position: relative;
+  max-width: 100%;
+  word-wrap: break-word;
+}
+.faq__question {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.faq__question-title {
+  font-family: "Prata", serif;
+  font-weight: 400;
+  font-size: 22px;
+  font-style: normal;
+}
+.faq__question-answer {
+  font-family: "Rubik", sans-serif;
+  color: #898082;
+  font-weight: 400;
+  font-size: 16px;
+  font-style: normal;
+}
+.faq__picture {
+  margin-top: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  max-width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 720px) {
+  .faq__all {
+    grid-template-columns: 1fr 1fr;
+  }
 }
