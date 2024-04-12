@@ -6,10 +6,7 @@
 @import "index.wine-selection.css";
 @import "index.video-veritas.css";
 @import "index.red-white-wines-card.css";
-<<<<<<< HEAD
-@import "index.winery-timeline.css";
-@import "index.testimonials.css"
-=======
 @import "index.section-awards.css";
 @import "index-nav.information.css";
->>>>>>> 93f97096676b8e73a780f9786eb5645a6c95d3c8
+@import "index.winery-timeline.css";
+@import "index.testimonials.css"
