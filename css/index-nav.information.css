@@ -1,0 +1,37 @@
+.hero-section__container {
+    background-image: url(../images/index.nav-inf/hero_image_background.jpg);
+    background-size: cover;
+    min-height: 500px;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: bold;
+
+    .hero-section__subtitle {
+        font-size: 1.0rem;
+        text-align: left;
+        padding: 15px;
+    }
+    .hero-section__title {
+        font-size: 3.5rem;
+        text-align: left;
+        padding: 15px;
+        margin: 20;
+    }
+    .hero-section__image {
+        width: 20%;*
+        margin: 35;
+        padding: 15px;
+    }
+    .hero-section__description {
+        font-size: 1.0rem;
+        text-align: left;
+        padding: 10px;
+        margin: 20;
+    }
+}
+
+
+
+/* align-items:center; */
