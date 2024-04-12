@@ -1,16 +1,4 @@
 /* Блок 15 | Nataliia Zinchenko */
-
-@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Prata&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
-
-:root {
-  --ui-dark-shade-color: #212736;
-  --ui-brand-color: rgb(200, 105, 58);
-}
-
-body {
-  background-color: var(--ui-dark-shade-color);
-}
-
 .awards__title {
   font-family: "Great Vibes", undefined;
   font-size: 28px;

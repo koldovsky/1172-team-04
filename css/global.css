@@ -9,6 +9,8 @@
 :root {
   --text-bright-color: #ffffff;
   --text-dark-color: #898022;
+  --ui-dark-shade-color: #212736;
+  --ui-brand-color: rgb(200, 105, 58);
   --icon-color: #c8693a;
   --icon-background-dark-color: #211b18;
   --icon-background-light-color: #342e2e;
