@@ -5,9 +5,139 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
+    <title>Shopping cart</title>
   </head>
   <body>
-
+    <!-- Later here will be code of "Shopping cart" pop up-->
+    <section class="shopping-cart">
+      <!-- HTML hardcoded template of shopping cart -->
+      <table class="shopping-cart__table">
+        <tr>
+          <th class="shopping-cart__header">Products</th>
+        </tr>
+        <tr class="shopping-cart__item">
+          <td class="shopping-cart__image">
+            <img
+              width="46"
+              src="images/index.section-wine-selection/pinot-noir.png"
+              alt="Pinot Noir"
+            />
+          </td>
+          <td class="shopping-cart__name">Pinot Noir (093049)</td>
+          <td class="shopping-cart__quantity">
+            <input
+              type="number"
+              class="shopping-cart__quantity-input"
+              name="quantity"
+              id="quantity"
+              min="1"
+              max="5"
+            />
+          </td>
+          <td class="shopping-cart__price">12,00 USD</td>
+          <td class="shopping-cart__remove-icon">
+            <svg
+              width="14"
+              height="18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M10 2h3.6c.2 0 .4.2.4.4v1.2c0 .2-.2.4-.4.4H.4C.2 4 0 3.9 0 3.6V2.4c0-.2.2-.4.4-.3h3.7V2L4.9.3c.1-.2.2-.3.4-.3h3.5c.1 0 .3.1.4.2l.8 1.7V2zM1.8 16.1c.1 1 1 1.9 2 1.9h6.3c1.1 0 1.9-.8 2-1.9l1-11.1H1l.8 11.1zM12 6l-.8 10.1c0 .5-.5.9-1 .9H3.8c-.5 0-1-.4-1-.9L2 6h10zM5 8.1h1v6H5v-6zm4 0H8v6h1v-6z"
+                fill="#9199AB"
+              ></path>
+            </svg>
+          </td>
+        </tr>
+        <tr class="shopping-cart__item">
+          <td class="shopping-cart__image">
+            <img
+              width="46"
+              src="images/index.section-wine-selection/riesling.png"
+              alt="Riesling"
+            />
+          </td>
+          <td class="shopping-cart__name">Riesling (093049)</td>
+          <td class="shopping-cart__quantity">
+            <input
+              type="number"
+              class="shopping-cart__quantity-input"
+              name="quantity"
+              id="quantity"
+              min="1"
+              max="5"
+            />
+          </td>
+          <td class="shopping-cart__price">16,00 USD</td>
+          <td class="shopping-cart__remove-icon">
+            <svg
+              width="14"
+              height="18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M10 2h3.6c.2 0 .4.2.4.4v1.2c0 .2-.2.4-.4.4H.4C.2 4 0 3.9 0 3.6V2.4c0-.2.2-.4.4-.3h3.7V2L4.9.3c.1-.2.2-.3.4-.3h3.5c.1 0 .3.1.4.2l.8 1.7V2zM1.8 16.1c.1 1 1 1.9 2 1.9h6.3c1.1 0 1.9-.8 2-1.9l1-11.1H1l.8 11.1zM12 6l-.8 10.1c0 .5-.5.9-1 .9H3.8c-.5 0-1-.4-1-.9L2 6h10zM5 8.1h1v6H5v-6zm4 0H8v6h1v-6z"
+                fill="#9199AB"
+              ></path>
+            </svg>
+          </td>
+        </tr>
+      </table>
+      <p class="shopping-cart__total"><b>Total: 28,00 USD</b></p>
+      <p class="shopping-cart__order"><b>Place an order</b></p>
+    </section>
+    <section class="order-form">
+      <ul class="order-form__list">
+        <li class="order-form__item">
+          <label class="order-form__label" for="name">Name</label>
+          <input
+            type="text"
+            class="order-form__input"
+            name="name"
+            id="name"
+            placeholder="Your name"
+            required
+          />
+        </li>
+        <li class="order-form__item">
+          <label class="order-form__label" for="email">Email</label>
+          <input
+            type="email"
+            class="order-form__input"
+            name="email"
+            id="email"
+            placeholder="Your email"
+            required
+          />
+        </li>
+        <li class="order-form__item">
+          <label class="order-form__label" for="phone">Phone</label>
+          <input
+            type="tel"
+            class="order-form__input"
+            name="phone"
+            id="phone"
+            placeholder="Your phone"
+            required
+          />
+        </li>
+        <li class="order-form__item">
+          <label class="order-form__label" for="comment">Your comment</label>
+          <input
+            type="text"
+            class="order-form__input"
+            name="comment"
+            id="comment"
+            placeholder="Your comment"
+          />
+        </li>
+      </ul>
+      <button class="order-form__submit" type="submit">Submit</button>
+    </section>
   </body>
 </html>
