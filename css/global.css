@@ -8,7 +8,7 @@
 
 :root {
   --text-bright-color: #ffffff;
-  --text-dark-color: #898022;
+  --text-dark-color: #898082;
   --ui-dark-shade-color: #212736;
   --ui-brand-color: rgb(200, 105, 58);
   --icon-color: #c8693a;
@@ -26,6 +26,7 @@
   --footer-copyrights-background-color: #130f0e;
   --wine-types-color: rgb(137, 128, 130);
   font-family: "Rubik", sans-serif;
+  font-weight: 400;
   scroll-behavior: smooth;
   color: var(--text-bright-color);
   background-color: var(--section-global-background-color);
@@ -48,5 +49,5 @@ h2 {
 
 img {
   display: block;
-   width: 20%;
+  width: 100%;
 }
