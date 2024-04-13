@@ -10,11 +10,11 @@
 .capabilities__advantages {
   display: flex;
   flex-direction: column;
-  gap: 5git 0px;
+  gap: 50px;
+  max-width: 1200;
 }
 
 .advantage {
-  position: relative;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -59,4 +59,11 @@
 
 .advantage__description-link-text:hover {
   text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .capabilities__advantages {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
