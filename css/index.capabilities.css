@@ -1,0 +1,62 @@
+.capabilities {
+  padding-top: 90px;
+  padding-bottom: 60px;
+  padding-left: 24px;
+  padding-right: 24px;
+  box-sizing: border-box;
+  min-width: 320px;
+}
+
+.capabilities__advantages {
+  display: flex;
+  flex-direction: column;
+  gap: 5git 0px;
+}
+
+.advantage {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 208px 33px 33px 33px;
+}
+
+.special-events {
+  background-image: url(../images/index.capabilities/capabilities-special-events.jpeg);
+}
+
+.organic-wines {
+  background-image: url(../images/index.capabilities/capabilities-organic-wines.jpeg);
+}
+
+.selected-grape {
+  background-image: url(../images/index.capabilities/capabilities-selected-grape.jpeg);
+}
+
+.advantage__description-title {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.advantage__description-text {
+  font-size: 16px;
+  color: var(--text-dark-color);
+  margin-bottom: 30px;
+}
+
+.advantage__description-link {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.advantage__description-link-text {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-bright-color);
+  text-decoration: none;
+}
+
+.advantage__description-link-text:hover {
+  text-decoration: underline;
+}
