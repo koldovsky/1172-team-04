@@ -1,12 +1,17 @@
 .hero-section__container {
     background-image: url(../images/index.nav-inf/hero_image_background.jpg);
     background-size: cover;
-    min-height: 500px;
-    background-position: center;
+    min-height: 604px;
+    background-position: left;
     display: flex;
     flex-direction: column;
     justify-content: center;
     font-weight: bold;
+    padding-top: 110px;
+    padding-bottom: 130px;
+    min-width: 526px;
+    border-image-repeat: stretch;
+    
     .hero-section__subtitle {
         font-size: 1.0rem;
         text-align: left;

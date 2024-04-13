@@ -24,6 +24,7 @@
   --section-join-background-color: #1a1512;
   --footer-contacts-background-color: #1b1613;
   --footer-copyrights-background-color: #130f0e;
+  --wine-types-color: rgb(137, 128, 130);
   font-family: "Rubik", sans-serif;
   scroll-behavior: smooth;
   color: var(--text-bright-color);
@@ -32,8 +33,7 @@
 
 h1,
 h3,
-h4,
-p {
+h4 {
   font-family: "Prata", serif;
   font-weight: 400;
   font-style: normal;
