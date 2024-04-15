@@ -71,11 +71,11 @@
     color: var(--wine-types-color);
 
 }
-/* @media (min-width:800px) {
+@media (min-width:800px) {
     .wine-types__container {
         align-items:flex-end;
     }
     .wine-types__subtitle {
         line-height: 159px;
     }
-}  */
+} 
