@@ -1,0 +1,81 @@
+.wine-types {
+    background-image: url(../images/index.section-inf.types-wine/background_wine_.jpg);
+    background-size: cover;
+    background-position: right;
+    min-height: 567px;
+    padding: 90px 0px;
+    
+}
+.wine-types__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    vertical-align: baseline;
+    
+    text-align: left; 
+    min-height: 7px;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0px 24px;
+    margin-top: 50px;
+}
+  
+
+
+.wine-types__title {
+    font-style: var( --ui-brand-color);
+    font-size: 14px;
+}
+.wine-types__subtitle {
+    margin-top: 20px;
+    font-size: 34px;
+}
+.wine-types__decor {
+    margin-top: 25px;
+    width: 166px;
+    height: 32px;
+    justify-content:flex-start;
+}
+.wine-types__description {
+    margin-top: 25px;
+    font-size: 18px;
+    line-height: 30.6px;
+    /* відстань між рядками треба збільшити */
+}
+.wine-types__article {
+    font-size: 22px;
+    .wine-types__article-title {
+        line-height: 62px;
+        height: 62px;
+        margin-top: 25px;
+        
+        
+    }
+    
+}
+.wine-types__list-container {
+    margin-top: 20px;
+}
+.wine-types__list{
+    display: flex;
+    flex-direction: row;
+
+}
+.wine-types__item{
+    font-size: 16px;
+    color: var(--ui-brand-color);
+
+}
+.wine-types__type {
+    font-size: 16px;
+    color: var(--wine-types-color);
+
+}
+/* @media (min-width:800px) {
+    .wine-types__container {
+        align-items:flex-end;
+    }
+    .wine-types__subtitle {
+        line-height: 159px;
+    }
+}  */

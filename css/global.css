@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Prata&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Prata&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
 * {
   margin: 0;
@@ -8,7 +8,9 @@
 
 :root {
   --text-bright-color: #ffffff;
-  --text-dark-color: #898022;
+  --text-dark-color: #898082;
+  --ui-dark-shade-color: #212736;
+  --ui-brand-color: rgb(200, 105, 58);
   --icon-color: #c8693a;
   --icon-background-dark-color: #211b18;
   --icon-background-light-color: #342e2e;
@@ -22,7 +24,9 @@
   --section-join-background-color: #1a1512;
   --footer-contacts-background-color: #1b1613;
   --footer-copyrights-background-color: #130f0e;
+  --wine-types-color: rgb(137, 128, 130);
   font-family: "Rubik", sans-serif;
+  font-weight: 400;
   scroll-behavior: smooth;
   color: var(--text-bright-color);
   background-color: var(--section-global-background-color);
@@ -45,6 +49,5 @@ h2 {
 
 img {
   display: block;
-  /* width: 100%; */
+  width: 100%;
 }
-
