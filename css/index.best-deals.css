@@ -72,16 +72,18 @@
 }
 
 .best-deals__item-button {
-  font-size: 14px;
-  font-weight: 900;
+  font: Rubik, sans-serif;
+  font-size: 15px;
+  font-weight: 7git00;
+  line-height: 15px;
+  letter-spacing: 0;
   color: var(--text-bright-color);
   background-color: var(--button-filled-color);
   border-color: var(--button-filled-color);
   border-radius: 2px;
   border-style: solid;
-  line-height: 15px;
-  height: 47px;
-  width: 135px;
+  padding: 15px 25px;
+  cursor: pointer;
 }
 
 @media (min-width: 584px) {
