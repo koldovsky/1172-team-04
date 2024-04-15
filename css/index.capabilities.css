@@ -9,16 +9,20 @@
 
 .capabilities__advantages {
   display: flex;
-  flex-direction: column;
-  gap: 50px;
-  max-width: 1200;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 50px;
+  column-gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .advantage {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 208px 33px 33px 33px;
+  width: 100%;
 }
 
 .special-events {
@@ -31,6 +35,10 @@
 
 .selected-grape {
   background-image: url(../images/index.capabilities/capabilities-selected-grape.jpeg);
+}
+
+.advantage__description {
+  margin: 208px 33px 33px 33px;
 }
 
 .advantage__description-title {
@@ -48,6 +56,7 @@
   display: flex;
   flex-direction: row;
   gap: 10px;
+  align-items: center;
 }
 
 .advantage__description-link-text {
@@ -61,9 +70,19 @@
   text-decoration: underline;
 }
 
+.advantage__description-link-arrow {
+  width: 24px;
+  height: 24px;
+}
+
 @media (min-width: 768px) {
-  .capabilities__advantages {
-    flex-direction: row;
-    flex-wrap: wrap;
+  .advantage {
+    width: calc((100% - 24px) / 2);
+  }
+}
+
+@media (min-width: 992px) {
+  .advantage {
+    width: calc((100% - 48px) / 3);
   }
 }
