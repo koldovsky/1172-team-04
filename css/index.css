@@ -10,4 +10,6 @@
 @import "index-nav.information.css";
 @import "index.section-inf.types-wine.css";
 @import "index.winery-timeline.css";
-@import "index.testimonials.css"
+@import "index.testimonials.css";
+@import "confirm-age.css";
+@import "not-allowed.css";

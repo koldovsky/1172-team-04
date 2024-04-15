@@ -74,7 +74,7 @@
 .best-deals__item-button {
   font: Rubik, sans-serif;
   font-size: 15px;
-  font-weight: 7git00;
+  font-weight: 700;
   line-height: 15px;
   letter-spacing: 0;
   color: var(--text-bright-color);
@@ -84,6 +84,12 @@
   border-style: solid;
   padding: 15px 25px;
   cursor: pointer;
+  text-decoration: none;
+}
+
+.best-deals__item-button:hover {
+  background-color: var(--button-filled-color-hover);
+  transition: 0.5s;
 }
 
 @media (min-width: 584px) {
