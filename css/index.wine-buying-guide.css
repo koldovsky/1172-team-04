@@ -1,0 +1,56 @@
+.background-overlay_2z6 {
+    background: rgba(52, 46, 46, 0.56);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.subtext {
+    font-style: italic;
+    margin-bottom: 20px;
+    color: #aaa;
+}
+
+.header {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.content img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.cta-buttons .button {
+    background-color: #e0a800;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-buttons .button:hover {
+    background-color: #c78900;
+}
