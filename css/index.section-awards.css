@@ -11,6 +11,20 @@ body {
   background-color: var(--ui-dark-shade-color);
 }
 
+.awards__table {
+  display: flex;
+  flex-direction: column;
+}
+
+.awards__row {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.awards__cell {
+  margin-right: 20px;
+}
+
 .awards__title {
   font-family: "Great Vibes", undefined;
   font-size: 28px;
@@ -18,8 +32,6 @@ body {
   color: var(--ui-brand-color);
   padding: auto;
   font-weight: 400;
-  margin-top: 10%;
-  margin-bottom: 0;
 }
 
 .awards__description {
@@ -127,4 +139,4 @@ body {
   margin-right: 30px;
   margin-bottom: 30px;
   margin-top: 30px;
-}
+} */
