@@ -1,0 +1,88 @@
+.capabilities {
+  padding-top: 90px;
+  padding-bottom: 60px;
+  padding-left: 24px;
+  padding-right: 24px;
+  box-sizing: border-box;
+  min-width: 320px;
+}
+
+.capabilities__advantages {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 50px;
+  column-gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.advantage {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.special-events {
+  background-image: url(../images/index.capabilities/capabilities-special-events.jpeg);
+}
+
+.organic-wines {
+  background-image: url(../images/index.capabilities/capabilities-organic-wines.jpeg);
+}
+
+.selected-grape {
+  background-image: url(../images/index.capabilities/capabilities-selected-grape.jpeg);
+}
+
+.advantage__description {
+  margin: 208px 33px 33px 33px;
+}
+
+.advantage__description-title {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.advantage__description-text {
+  font-size: 16px;
+  color: var(--text-dark-color);
+  margin-bottom: 30px;
+}
+
+.advantage__description-link {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+
+.advantage__description-link-text {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-bright-color);
+  text-decoration: none;
+}
+
+.advantage__description-link-text:hover {
+  text-decoration: underline;
+}
+
+.advantage__description-link-arrow {
+  width: 24px;
+  height: 24px;
+}
+
+@media (min-width: 768px) {
+  .advantage {
+    width: calc((100% - 24px) / 2);
+  }
+}
+
+@media (min-width: 992px) {
+  .advantage {
+    width: calc((100% - 48px) / 3);
+  }
+}
