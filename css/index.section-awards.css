@@ -7,6 +7,15 @@
   --ui-brand-color: rgb(200, 105, 58);
 }
 
+.awards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
 body {
   background-color: var(--ui-dark-shade-color);
 }
