@@ -4,7 +4,7 @@
 
 .title-container h2 {
     font-size: 1.5em;
-    color: var(--section-title-color); 
+    color: var(--section-title-color);
     margin-bottom: 0;
 }
 
@@ -15,31 +15,31 @@
 
 .wine-description {
     margin-bottom: 2em;
-    color: var(--text-bright-color); 
+    color: var(--text-bright-color);
 }
 
 .wine-container {
     display: flex;
     justify-content: center;
-    align-items: flex-start; 
+    align-items: flex-start;
     padding: 0;
     margin: 0 auto;
-    flex-wrap: nowrap; 
+    flex-wrap: nowrap;
 }
 
 .wine-item {
     padding: 1em;
-    width: 300px; 
+    width: 300px;
 }
 
 .wine-item img {
-    width: 100%; 
+    width: 100%;
     height: auto;
     margin-bottom: 1em;
 }
 
 .wine-item h3 {
-    color: var(--text-bright-color); 
+    color: var(--text-bright-color);
     margin: 0.5em 0;
 }
 

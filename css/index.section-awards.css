@@ -10,9 +10,9 @@
 }
 
 @media (min-width: 400px) {
-    .awards__content {
-        grid-template-columns: 1fr; 
-    }
+  .awards__content {
+    grid-template-columns: 1fr;
+  }
 }
 
 

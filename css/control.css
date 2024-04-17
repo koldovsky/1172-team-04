@@ -1,5 +1,5 @@
 button {
-    background-color: var(--button-filled-color); 
+    background-color: var(--button-filled-color);
     border: none;
     padding: 15px 25px;
     color: var(--button-blank-color);
@@ -7,9 +7,9 @@ button {
     border-radius: 2px;
     cursor: pointer;
     font-size: 14px;
-    letter-spacing: 1px; 
+    letter-spacing: 1px;
 }
 
 button:hover {
-    background-color: var(--button-filled-color); 
+    background-color: var(--button-filled-color);
 }
