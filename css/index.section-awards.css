@@ -16,6 +16,17 @@
   position: relative;
 }
 
+@media (min-width: 400px) {
+    .awards__content {
+        grid-template-columns: 1fr; /* 2 стовпа*/
+    }
+}
+/* 
+@media (min-width: 768px) {
+    .awards__content {
+        grid-template-columns: 1fr 1fr; /* 2 стовпа*/
+
+
 body {
   background-color: var(--ui-dark-shade-color);
 }
