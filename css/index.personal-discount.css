@@ -1,16 +1,14 @@
-.video{
-    background-image: url(../images/index.section-video/video-veritas-photo.png);
+.discount{
+    background-image: url(../images/index.section-discount/personal-discount-photo.png);
+    background-color: #c8693aed;
     background-size: cover; /* Cover entire container */
     background-position: center; /* Center the background */
-    height: 100vh; /* Set height to full viewport height */
+    height: 50vh; /* Set height to full viewport height */
     display: flex; /* Add flex container to align items */
     flex-direction: column; /* Align items vertically */
     justify-content: center; /* Center items vertically */
     align-items: center; /* Center items horizontally */
 }
-
-.video__logo-image {
-    width: 10%; /* Set initial width */
-    max-width: 200px; /* Add max-width to prevent it from getting too large */
-    height: auto; /* Maintain aspect ratio */
+.discount__button{
+    border: 2px solid #fffefe;
 }
