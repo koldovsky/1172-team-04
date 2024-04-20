@@ -7,10 +7,29 @@
     flex-direction: column; /* Align items vertically */
     justify-content: center; /* Center items vertically */
     align-items: center; /* Center items horizontally */
+    position: relative;
+
 }
 
 .video__logo-image {
-    width: 10%; /* Set initial width */
-    max-width: 200px; /* Add max-width to prevent it from getting too large */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%; 
+    max-width: 200px; 
+    height: auto; 
+}
+.video{
+    position: relative;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start ; /* Вирівнюємо елементи по лівому краю */
+    padding: 0 24px;
+}
+
+.video__title {
+    font-size: 50px ;
+}
+.video__subtitle{
+    font-size: 70px;
+}
+.video__description{
+    font-size: 20px;
 }
