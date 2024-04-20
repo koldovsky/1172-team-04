@@ -13,3 +13,17 @@
 // Task 4 Smallest value of an array
 // https://www.codewars.com/kata/544a54fd18b8e06d240005c0/train/javascript
 // Serhii Zamorii: https://www.codewars.com/kata/reviews/544a5616dd73509376000092/groups/66240a6989a88b00016ada16
+
+// Additional optional tasks:
+
+// Task 5 A wolf in sheep's clothing
+// https://www.codewars.com/kata/a-wolf-in-sheeps-clothing/train/javascript
+// Serhii Zamorii: https://www.codewars.com/kata/reviews/5c8bfbbf3b8ec2000116c7cb/groups/5f95dab23677540001f0dfe2
+
+// Task 6 Beginner - Lost Without a Map
+// https://www.codewars.com/kata/beginner-lost-without-a-map
+// Serhii Zamorii: https://www.codewars.com/kata/reviews/57f7818f2e3d8ca2a0000080/groups/57f8040a7b992e04840001a8
+
+// Task 7 Find the first non-consecutive number
+// https://www.codewars.com/kata/find-the-first-non-consecutive-number/train/javascript
+// Serhii Zamorii: https://www.codewars.com/kata/reviews/58f8a3fd6f3e351305001710/groups/58fa8007e400bfa16e000a4f
