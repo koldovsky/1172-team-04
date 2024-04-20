@@ -1,4 +1,4 @@
-// Task 1//
+// Task 1
 // https://www.codewars.com/kata/53da3dbb4a5168369a0000fe/train/javascript
 // Solution:
 // https://www.codewars.com/kata/reviews/5425fedf430ca265ea00033e/groups/635d28705beff1000100276a
