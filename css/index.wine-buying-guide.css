@@ -25,31 +25,19 @@
 }
 
 .content-container p {
-    /* Стиль для "Crafted by our winemakers" */
     font-size: 20px;
-    /* Приклад, вам потрібно змінити це згідно вашого дизайну */
     color: #fff;
-    /* Білий колір тексту, або інший, який ви використовуєте */
     margin-bottom: 10px;
-    /* Приклад відступу від `p` до `h2` */
     font-weight: normal;
-    /* Якщо потрібен стандартний вага шрифту */
     text-transform: uppercase;
-    /* Якщо текст має бути великими літерами */
     letter-spacing: 1px;
-    /* Додає простір між літерами */
 }
 
 .content-container h2 {
-    /* Стиль для "Discover Our Wines" */
     font-size: 36px;
-    /* Великий розмір шрифту */
     color: #fff;
-    /* Той же колір тексту, що і у `p` */
     font-weight: bold;
-    /* Жирний текст для заголовку */
     margin: 0;
-    /* Якщо не потрібні додаткові відступи навколо `h2` */
 }
 
 .content img {
