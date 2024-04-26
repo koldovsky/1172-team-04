@@ -1,73 +1,157 @@
 .hero-section__container {
     background-image: url(../images/index.nav-inf/hero_image_background.jpg);
     background-size: cover;
-    min-height: 604px;
-    background-position: left;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-weight: bold;
+    background-repeat: no-repeat;
+    position: relative;
+    background-attachment: fixed;
     padding-top: 110px;
     padding-bottom: 130px;
-    min-width: 526px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    font-weight: bold;
     border-image-repeat: stretch;
 }
 
 .hero-section__subtitle {
-    font-size: 1.0rem;
-    text-align: left;
     padding: 15px;
+    font-size: 14px;
+    text-align: left;
+
 }
 
 .hero-section__title {
-    font-size: 3.5rem;
+    font-size: 58px;
     text-align: left;
-    padding: 15px;
-    margin: 20;
+    /* padding: 15px; */
+    margin: 20px;
 }
 
 .hero-section__image {
-    width: 20%;
-    margin: 35;
+    width: 272px;
+    margin: 40;
     padding: 15px;
 }
 
 .hero-section__nav,
 .hero-section__description {
+    display: flex;
     font-size: 1.0rem;
     text-align: left;
-    padding: 10px;
-    margin: 20;
+    /* padding: 15px; */
+    margin: 20px;
+}
+
+.hero-section__first_but {
+    display: block;
+    width: 140px;
+    height: 50px;
+    border: 2px solid #fefeff;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: 0 0 40px 0px;
 }
 
 .hero-section__button {
-    color: #FFF;
-    border: 2px solid white;
-    border-radius: 0px;
-    padding: 18px 36px;
-    display: inline-block;
-    font-family: "Lucida Console", Monaco, monospace;
-    font-size: 14px;
-    letter-spacing: 1px;
-    cursor: pointer;
-    box-shadow: inset 0 0 0 0 #D80286;
-    -webkit-transition: ease-out 0.4s;
-    -moz-transition: ease-out 0.4s;
-    transition: ease-out 0.4s;
+    font-family: arial;
+    font-size: 16px;
+    color: #fefeff;
+    text-decoration: none;
+    line-height: 50px;
+    transition: all .5s ease;
+    z-index: 2;
+    position: relative;
 }
 
-.slide_diagonal:hover {
-    box-shadow: inset 400px 50px 0 0 #D80286;
+.eff-7 {
+    width: 140px;
+    height: 50px;
+    border: 0px solid var(--icon-color);
+    position: absolute;
+    transition: all .5s ease;
+    z-index: 1;
+    box-sizing: border-box;
 }
 
-#outer {
-    width: 364px;
-    margin: 50px auto 0 auto;
+.hero-section__first_but:hover .eff-7 {
+    border: 70px solid #fefeff;
+}
+
+.hero-section__button:hover {
+    color: var(--icon-color);
+}
+
+.hero-section__sec_but {
+    width: 140px;
+    height: 50px;
+    border: 2px solid var(--icon-color);
+    float: left;
     text-align: center;
+    cursor: pointer;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: 0 0 40px 50px;
+}
+
+.hero-section__sec-button {
+    font-family: arial;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    line-height: 50px;
+    transition: all .5s ease;
+    z-index: 2;
+    position: relative;
+}
+
+.eff-8 {
+    width: 140px;
+    height: 20px;
+    border: 70px solid var(--icon-color);
+    position: absolute;
+    transition: all .5s ease;
+    z-index: 1;
+    box-sizing: border-box;
+}
+
+.hero-section__sec_but:hover .eff-8 {
+    border: 0px solid var(--icon-color);
+}
+
+.hero-section__sec-button:hover {
+    color: var(--icon-color);
 }
 
 @media (min-width:800px) {
     .hero-section__container {
         align-items: last baseline;
+        padding-right: 180px;
+        padding-top: 215px;
+        padding-bottom: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-position: center center;
+    }
+
+    .hero-section__subtitle {
+        font-size: 28px;
+    }
+
+    .hero-section__title {
+        font-size: 84px;
+    }
+
+    .hero-section__image {
+        width: 200px;
+    }
+
+    .hero-section__button {
+        display: inline-block;
     }
 }
