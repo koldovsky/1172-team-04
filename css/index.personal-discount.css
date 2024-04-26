@@ -1,0 +1,16 @@
+.discount {
+    background-image: url(../images/index.section-discount/personal-discount-photo.png);
+    background-color: rgba(200, 105, 58, 0.82);
+    background-size: cover; /* Займає весь контейнер */
+    background-position: center; /* Вирівнює по центру */
+    height: 50vh; /* Задає висоту контейнера на 50% висоти вікна */
+    display: flex; /* Додає гнучкий контейнер для вирівнювання елементів */
+    flex-direction: column; /* Вертикальне вирівнювання елементів */
+    justify-content: center; /* Вирівнює по вертикалі */
+    align-items: center; /* Вирівнює по горизонталі */
+}
+
+
+.discount__button{
+    border: 2px solid #fffefe;
+}

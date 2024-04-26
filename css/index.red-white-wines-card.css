@@ -1,0 +1,62 @@
+/* Wine Section */
+.wine-section {
+    display: flex;
+    margin-top: 100px;
+    width: 100%;
+    padding: 20px 0;
+    flex-wrap: wrap;
+}
+
+.wine-category {
+    width: calc(50% - 20px); /* Adjust width as needed, considering margins */
+    margin: 10px; /* Add margin between items */
+    background-size: cover;
+    background-position: center;
+    position: relative; /* Required for aspect ratio technique */
+    display: flex; /* Added */
+    flex-direction: column; /* Added */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+}
+
+.wine-category::before {
+    content: "";
+    display: block;
+    padding-top: 66.666%; /* Aspect ratio 3:2 (300/450) */
+}
+
+.wine-category:nth-child(odd) {
+    background-image: url(../images/index.section-red-white-wine-card/red-wine-for-card.jpeg);
+}
+
+.wine-category:nth-child(even) {
+    background-image: url(../images/index.section-red-white-wine-card/white-wine-for-card.jpeg);
+}
+
+.wine-category__title {
+    font-size: 29px; /* Adjust font size for larger title */
+    margin: 0; /* Remove default margin */
+}
+
+.wine-category__description,
+.wine-category__button {
+    margin-top: 10px; /* Adjust spacing between elements */
+    margin-left: 100px;
+}
+
+
+
+
+/* Add media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .wine-category {
+        width: calc(100% - 20px); /* Adjust width for smaller screens */
+    }
+}
+
+/* Add media query for very large screens */
+@media screen and (min-width: 2100px) {
+    .wine-category {
+        width: calc(25% - 20px); /* Adjust width for very large screens */
+    }
+}

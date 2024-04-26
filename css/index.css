@@ -1,4 +1,6 @@
 @import "global.css";
+@import "control.css";
+@import "header.css";
 @import "index.capabilities.css";
 @import "index.best-deals.css";
 @import "index.section-faq.css";
@@ -6,3 +8,12 @@
 @import "index.video-veritas.css";
 @import "index.red-white-wines-card.css";
 @import "index.section-awards.css";
+@import "index-nav.information.css";
+@import "index.section-inf.types-wine.css";
+@import "index.winery-timeline.css";
+@import "index.testimonials.css";
+@import "confirm-age.css";
+@import "not-allowed.css";
+@import "index.wine-buying-guide.css";
+@import "footer.css";
+@import "index.personal-discount.css"

@@ -1,0 +1,84 @@
+.confirm-age__container {
+  text-align: center;
+  padding: 80px 24px;
+  min-width: 320px;
+}
+
+.confirm-age__title {
+  font-size: 34px;
+  font-weight: 400;
+  line-height: 44.2px;
+  margin-bottom: 30px;
+}
+
+.confirm-age__figure {
+  width: 165px;
+  height: auto;
+  margin: auto;
+}
+
+.confirm-age__message {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25.6px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+.confirm-age__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  row-gap: 20px;
+  justify-content: center;
+}
+
+.confirm-age__button-yes {
+  font: Rubik, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 0;
+  color: var(--text-bright-color);
+  background-color: var(--button-filled-color);
+  border-color: var(--button-filled-color);
+  border-radius: 2px;
+  border-style: solid;
+  padding: 15px 25px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.confirm-age__button-yes:hover {
+  background-color: var(--button-filled-color-hover);
+  transition: 0.5s;
+}
+
+.confirm-age__button-no {
+  font: Rubik, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 0;
+  color: var(--text-bright-color);
+  background-color: var(--section-global-background-color);
+  border-color: var(--button-blank-color);
+  border-radius: 2px;
+  border-style: solid;
+  padding: 15px 25px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.confirm-age__button-no:hover {
+  color: var(--section-global-background-color);
+  background-color: var(--button-blank-color);
+  transition: 0.5s;
+}
+
+@media (min-width: 767px) {
+  .confirm-age__title {
+    font-size: 48px;
+    line-height: 62.4px;
+  }
+}

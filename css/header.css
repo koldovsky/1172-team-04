@@ -1,0 +1,41 @@
+.social-icons__icon {
+    width: 26px;
+    height: 26px;
+    color: #c8693a
+}
+
+.logo__img {
+    width: 176px;
+    height: auto;
+}
+
+.header__logo {
+    padding: 10px;
+}
+
+.nav__link {
+    color: var(--text-bright-color);
+    font-size: 14px;
+    font-weight: 500;
+
+}
+
+.nav__item {
+    display: inline-block;
+}
+
+.w-section--header {
+    padding-top: 30px;
+    padding-bottom: 30px
+}
+
+.horizontal-overlay {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 104px;
+    /* тимчасовий фіксований розмір  */
+}

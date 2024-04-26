@@ -1,14 +1,33 @@
 /* Блок 15 | Nataliia Zinchenko */
 
-@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Prata&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
-
-:root {
-  --ui-dark-shade-color: #212736;
-  --ui-brand-color: rgb(200, 105, 58);
+.awards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
 }
 
-body {
-  background-color: var(--ui-dark-shade-color);
+@media (min-width: 400px) {
+  .awards__content {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.awards__table {
+  display: flex;
+  flex-direction: column;
+}
+
+.awards__row {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.awards__cell {
+  margin-right: 20px;
 }
 
 .awards__title {
@@ -18,8 +37,6 @@ body {
   color: var(--ui-brand-color);
   padding: auto;
   font-weight: 400;
-  margin-top: 10%;
-  margin-bottom: 0;
 }
 
 .awards__description {
@@ -28,19 +45,18 @@ body {
   text-align: center;
   color: rgb(255, 255, 255);
   padding: auto;
-  margin-top: 1%;
   font-weight: 400;
 }
 
 .awards__divider {
   display: block;
   box-sizing: border-box;
-  margin-top: -3%;
   margin-left: auto;
   margin-right: auto;
   align-content: center;
-  width: 166;
-  margin-bottom: 5%;
+  width: 200px;
+  height: auto;
+  margin: 0 auto 20px;
 }
 
 .awards__text {
@@ -49,31 +65,18 @@ body {
   text-align: center;
   padding: auto;
   font-size: 18px;
-  margin-left: 30px;
-  margin-right: 30px;
-  margin-bottom: 30px;
-  margin-top: 30px;
 }
 
 .awards__table {
   align-content: center;
   padding: auto;
-  margin-bottom: 10%;
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-bottom: 30px;
-  margin-top: 30px;
 }
 
-.awards-table__logo {
+.awards__logo {
   display: block;
   box-sizing: border-box;
   width: 114px;
   padding: auto;
-  margin-left: 30px;
-  margin-right: 30px;
-  margin-bottom: 30px;
-  margin-top: 30px;
 }
 
 .award__name {
@@ -84,10 +87,6 @@ body {
   overflow-wrap: break-word;
   text-align: left;
   padding: auto;
-  margin-left: 30px;
-  margin-right: 30px;
-  margin-bottom: 30px;
-  margin-top: 30px;
 }
 
 .award__year {
@@ -98,10 +97,6 @@ body {
   overflow-wrap: break-word;
   text-align: left;
   padding: auto;
-  margin-left: 30px;
-  margin-right: 30px;
-  margin-bottom: 30px;
-  margin-top: 30px;
 }
 
 .award__desc {
@@ -115,16 +110,4 @@ body {
   height: auto;
   box-sizing: border-box;
   padding: auto;
-  margin-left: 30px;
-  margin-right: 30px;
-  margin-bottom: 30px;
-  margin-top: 30px;
-}
-
-.awards-table__row,
-.awards-table__cell {
-  margin-left: 30px;
-  margin-right: 30px;
-  margin-bottom: 30px;
-  margin-top: 30px;
 }

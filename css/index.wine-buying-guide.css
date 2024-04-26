@@ -1,0 +1,73 @@
+.background-wine-buying-guide {
+    background-image: url("../images/index.wine-buying-guide/backround.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    padding: 50px;
+    font-size: 1.5em;
+}
+
+.content-container p {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 10px;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.content-container h2 {
+    font-size: 36px;
+    color: #fff;
+    font-weight: bold;
+    margin: 0;
+}
+
+.content img {
+    width: 165px;
+    height: auto;
+    margin: auto;
+}
+
+.content p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.info-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.info-buttons button {
+    padding: 15px 30px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    background-color: orange;
+    color: white;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+
+.info-buttons button:hover {
+    background-color: darkorange;
+}
