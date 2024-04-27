@@ -1,8 +1,8 @@
-body {
+/* body {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
-  }
+  } */
   
   .container {
     display: flex;
@@ -49,10 +49,10 @@ body {
     padding-left: 20px;
 }
 
-p {
+/* p {
     color: #898082;
     padding: 20px;
-}
+} */
 
 .card__title {
     color: white;
@@ -69,14 +69,14 @@ p {
     font-size: 20px;
 }
 
-h3 {
+/* h3 {
     padding: 10px;
     font-size: 25px;
     font-family: "Prata", serif;
     font-weight: 400;
     font-style: normal;
-    color: white;
-}
+    color: white; */
+/* } */
 
 .first-block{
     text-align: left;
