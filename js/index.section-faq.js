@@ -1,4 +1,4 @@
-let listElements = document.querySelectorAll(".faq__item");
+const listElements = document.querySelectorAll(".faq__item");
 
 listElements.forEach((listElement) => {
   listElement.addEventListener("click", () => {
