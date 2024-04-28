@@ -1,8 +1,8 @@
 .best-deals {
   padding-top: 90px;
   padding-bottom: 50px;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding-left: 12px;
+  padding-right: 12px;
   text-align: center;
   min-width: 320px;
 }
@@ -17,8 +17,8 @@
   font-size: 34px;
   font-weight: 400;
   line-height: 44.2px;
-  margin-top: 20px;
-  margin-bottom: 25px;
+  margin-top: 10px;
+  margin-bottom: 15px;
 }
 
 .best-deals__information-figure {
@@ -31,18 +31,14 @@
   font-size: 18px;
   font-weight: 400;
   line-height: 30.6px;
-  margin-top: 20px;
-  margin-bottom: 46px;
+  color: var(--text-bright-color);
+  margin-bottom: 25px;
 }
 
-.best-deals__items {
-  padding-left: 16px;
-  padding-right: 16px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  max-width: 1200px;
+.best-deals__carousel {
+  display: grid;
+  grid-template-columns: 12px 1fr 12px;
+  max-width: 1230px;
   margin: 0 auto;
 }
 
@@ -93,9 +89,14 @@
 }
 
 .best-deals__arrow-container {
-  width: 30px;
+  width: 12px;
   display: flex;
   align-items: center;
+}
+
+.best-deals__wines {
+  display: flex;
+  flex-direction: row;
 }
 
 .best-deals__arrow-left {
@@ -119,22 +120,4 @@
   width: 30px;
   height: 30px;
   padding: 5px;
-}
-
-@media (min-width: 584px) {
-  .best-deals__item {
-    width: calc((100% - 24px) / 2);
-  }
-}
-
-@media (min-width: 848px) {
-  .best-deals__item {
-    width: calc((100% - 48px) / 3);
-  }
-}
-
-@media (min-width: 1112px) {
-  .best-deals__item {
-    width: calc((100% - 60px) / 3);
-  }
 }
