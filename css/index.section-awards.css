@@ -147,7 +147,7 @@
   .awards__row {
     display: contents; /* the child elements would be grid items */
   }
-  
+
   .awards__our__wines {
     font-size: 41px;
   }
@@ -158,7 +158,7 @@
     margin-left: 40px;
     margin-right: 40px;
   }
-    
+
   .awards__our__wines {
     font-size: 48px;
   }
