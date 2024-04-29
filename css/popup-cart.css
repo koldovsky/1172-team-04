@@ -1,1 +1,130 @@
 /* Блок 12 | Nataliia Zinchenko */
+
+.shopping-cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    visibility: hidden;
+  }
+  
+  .shopping-cart__content {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+  
+  .shopping-cart__table {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr 1fr;
+    grid-auto-flow: row;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  
+  .shopping-cart__name {
+    font-weight: bold;
+    font-family: Rubik, sans-serif;
+    font-size: 16px;
+  }
+  
+  .shopping-cart__image > img {
+    display: block;
+    box-sizing: border-box;
+    width: 46px;
+    padding: 0;
+  }
+  
+  .shopping-cart__row {
+    display: contents;
+  }
+  
+  .shopping-cart__cell {
+    padding-left: 15px;
+    padding-right: 15px;
+    align-self: center;
+    line-height: 30.6px;
+  }
+  
+  .shopping-cart__order-button {
+    font: Rubik, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 0;
+    color: #ffffff;
+    background-color: #c8693a;
+    border-radius: 2px;
+    border-style: none;
+    padding: 15px 25px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .shopping-cart__order-button:hover {
+    background-color: #b45e34;
+    transition: 0.5s;
+  }
+  
+  .order-form {    
+    visibility: hidden;
+  }
+  
+  .order-form__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center; /* horizontal and vertical centering */
+  }
+  
+  .order-form__item {
+    margin-top: 20px;
+    justify-self: center;
+    align-items: center;
+  }
+  .order-form__item > * {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  
+  .shopping-cart__empty {
+      display: flex;
+      flex-direction: column;
+      place-items: center; /* horizontal and vertical centering */
+  }
+  
+  .shopping-cart__empty > * {
+      align-self: center;
+  }
+  
+  .shopping-cart__empty__big-text {
+    font-weight: bold;
+    font-family: Rubik, sans-serif;
+    font-size: 18px;
+  }
+  
+  .shopping-cart__empty__small-text {
+    font-weight: bold;
+    font-family: Rubik, sans-serif;
+    font-size: 16px;
+  }
+  
+  
+  
+  @media (min-width: 1000px) {
+      .shopping-cart {
+          visibility: visible;
+      }
+  
+      .order-form {
+          visibility: visible;
+      }
+  
+      .shopping-cart__empty {
+          visibility: hidden;
+      }
+  }
