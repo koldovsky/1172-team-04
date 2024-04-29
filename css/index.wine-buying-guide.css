@@ -1,36 +1,49 @@
-.background-overlay_2z6 {
-    background: rgba(52, 46, 46, 0.56);
-    position: absolute;
+.background-wine-buying-guide {
+    background-image: url("../images/index.wine-buying-guide/backround.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+    position: relative;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    z-index: 0;
+    z-index: -1;
 }
 
-.content {
-    position: relative;
-    z-index: 1;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    padding: 50px;
+    font-size: 1.5em;
 }
 
-.subtext {
-    font-style: italic;
-    margin-bottom: 20px;
-    color: #aaa;
+.content-container p {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 10px;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-.header {
-    font-size: 48px;
-    margin-bottom: 20px;
+.content-container h2 {
+    font-size: 36px;
+    color: #fff;
+    font-weight: bold;
+    margin: 0;
 }
 
 .content img {
-    width: 100%;
+    width: 165px;
     height: auto;
-    margin-bottom: 20px;
+    margin: auto;
 }
 
 .content p {
@@ -38,19 +51,23 @@
     margin-bottom: 40px;
 }
 
-.cta-buttons .button {
-    background-color: #e0a800;
-    color: white;
-    border: none;
-    padding: 15px 30px;
-    font-size: 18px;
-    font-weight: bold;
-    margin: 0 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+.info-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
-.cta-buttons .button:hover {
-    background-color: #c78900;
+.info-buttons button {
+    padding: 15px 30px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    background-color: orange;
+    color: white;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+
+.info-buttons button:hover {
+    background-color: darkorange;
 }

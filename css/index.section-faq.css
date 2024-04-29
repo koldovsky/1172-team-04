@@ -1,5 +1,3 @@
-
-
 .faq {
   padding: 50px 0;
   display: flex;
@@ -36,12 +34,16 @@
 }
 
 .faq__image {
+  min-height: 32px;
   position: relative;
   margin-top: 25px;
   padding-top: 13px;
   box-sizing: border-box;
   border-image-repeat: stretch;
-  width: auto;
+  width: 166px;
+  overflow: hidden;
+  display: block;
+  max-width: 100%;
 }
 
 .faq__list {
@@ -51,15 +53,15 @@
   overflow: hidden;
 }
 
-.faq__list li:last-child .dropdown {
-  border-bottom: 0;
+.faq__list li:last-child .faq__question-title {
+  border-bottom: 1;
 }
 
-.acordion-menu li.active .dropdown {
+.faq__list li.active .faq__question-title {
   color: #fff;
 }
 
-.acordion-menu li.active .dropdown .fa-plus::before {
+.faq__list li.active .faq__question-title .fa-plus::before {
   content: "\f068";
 }
 
@@ -79,6 +81,7 @@
 }
 
 .faq__question-title {
+  padding: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -99,12 +102,13 @@
 }
 
 .faq__question-answer {
+  margin-top: 20px;
   font-family: "Rubik", sans-serif;
-  color:var(--text-dark-color);
+  color: var(--text-dark-color);
   font-weight: 400;
   font-size: 16px;
   font-style: normal;
-  /*display: none;*/
+  display: none;
 }
 
 .faq__list li.active .faq__question-answer {
@@ -112,6 +116,7 @@
 }
 
 .faq__picture {
+  display: flex;
   margin-top: 50px;
   padding: 0 15px;
   position: relative;
@@ -125,15 +130,28 @@
     align-items: flex-start;
     padding: 0 32px;
   }
-
+  .faq__questions {
+    flex-basis: calc(100% * 7 / 12);
+    max-width: calc(100% * 7 / 12);
+  }
   .faq__picture {
     margin: 0 auto;
+    flex-basis: calc(100% * 5 / 12);
+    max-width: calc(100% * 5 / 12);
   }
 }
 
 @media (min-width: 990px) {
   .faq__all {
     padding: 0 40px;
+  }
+  .faq__questions {
+    flex-basis: calc(100% * 7 / 12);
+    max-width: calc(100% * 7 / 12);
+  }
+  .faq__picture {
+    flex-basis: calc(100% * 5 / 12);
+    max-width: calc(100% * 5 / 12);
   }
 }
 
@@ -142,4 +160,13 @@
     padding: 0 15px;
     margin: 0 40px;
   }
+  .faq__questions {
+    flex-basis: calc(100% * 7 / 12);
+    max-width: calc(100% * 7 / 12);
+  }
+  .faq__picture {
+    flex-basis: calc(100% * 5 / 12);
+    max-width: calc(100% * 5 / 12);
+  }
 }
+

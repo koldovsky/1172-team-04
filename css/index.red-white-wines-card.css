@@ -1,0 +1,68 @@
+.wine-section {
+    display: flex;
+    margin-top: 100px;
+    width: 100%;
+    padding: 20px 0;
+    justify-content: center;
+    row-gap: 50px;
+    column-gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.wine-category {
+    width: calc(50% - 20px); 
+    margin: 10px; 
+    background-size: cover;
+    background-position: center;
+    position: relative; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+}
+
+.wine-category::before {
+    content: "";
+    display: block;
+    padding-top: 66.666%; 
+}
+
+.wine-category:nth-child(odd) {
+    background-image: url(../images/index.section-red-white-wine-card/red-wine-for-card.jpeg);
+}
+
+.wine-category:nth-child(even) {
+    background-image: url(../images/index.section-red-white-wine-card/white-wine-for-card.jpeg);
+}
+
+.wine-category__title {
+    font-size: 29px; 
+    margin: 0; 
+}
+
+.wine-category__description,
+.wine-category__button {
+    margin-top: 10px; 
+    margin-left: 100px;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .wine-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .wine-category {
+        width: calc(100% - 20px); 
+    }
+}
+
+
+@media screen and (min-width: 2100px) {
+    .wine-category {
+        width: calc(25% - 20px); 
+    }
+}

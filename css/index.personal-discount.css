@@ -1,0 +1,29 @@
+.discount {
+    background-image: url(../images/index.section-discount/personal-discount-photo.png);
+    background-color: rgba(200, 105, 58, 0.82);
+    background-size: cover;
+    background-position: center; 
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    min-width: 320px;
+    box-sizing: border-box;
+    padding-top: 90px;
+    padding-bottom: 60px;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 50px;
+    column-gap: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+
+.discount__button{
+    border: 2px solid #fffefe;
+}

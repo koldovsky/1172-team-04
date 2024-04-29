@@ -1,0 +1,36 @@
+.video{
+    background-image: url(../images/index.section-video/video-veritas-photo.png);
+    background-size: cover; 
+    background-position: center; 
+    height: 100vh; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    position: relative;
+    
+
+}
+
+.video__logo-image {
+    width: 100%; 
+    max-width: 200px; 
+    height: auto; 
+}
+.video{
+    position: relative;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start ; 
+    padding: 0 24px;
+}
+
+.video__title {
+    font-size: 50px ;
+}
+.video__subtitle{
+    font-size: 70px;
+}
+.video__description{
+    font-size: 20px;
+}
