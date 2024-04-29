@@ -1,8 +1,8 @@
 .best-deals {
   padding-top: 90px;
   padding-bottom: 50px;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding-left: 12px;
+  padding-right: 12px;
   text-align: center;
   min-width: 320px;
 }
@@ -16,6 +16,7 @@
 .best-deals__information-slogan {
   font-size: 34px;
   font-weight: 400;
+  letter-spacing: -0.68px;
   line-height: 44.2px;
   margin-top: 20px;
   margin-bottom: 25px;
@@ -31,18 +32,17 @@
   font-size: 18px;
   font-weight: 400;
   line-height: 30.6px;
+  color: var(--text-bright-color);
   margin-top: 20px;
-  margin-bottom: 46px;
+  margin-bottom: 45px;
+  margin-left: 12px;
+  margin-right: 12px;
 }
 
-.best-deals__items {
-  padding-left: 16px;
-  padding-right: 16px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  max-width: 1200px;
+.best-deals__carousel {
+  display: grid;
+  grid-template-columns: 12px 1fr 12px;
+  max-width: 1230px;
   margin: 0 auto;
 }
 
@@ -69,7 +69,7 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 26px;
-  margin-bottom: 24px;
+  margin-bottom: 38px;
 }
 
 .best-deals__item-button {
@@ -93,18 +93,24 @@
 }
 
 .best-deals__arrow-container {
-  width: 30px;
   display: flex;
   align-items: center;
+}
+
+.best-deals__wines {
+  display: flex;
+  flex-direction: row;
 }
 
 .best-deals__arrow-left {
   fill: var(--text-bright-color);
   transform: rotateY(180deg);
+  cursor: pointer;
 }
 
 .best-deals__arrow-right {
   fill: var(--text-bright-color);
+  cursor: pointer;
 }
 
 .best-deals__item-pointers {
@@ -115,26 +121,80 @@
 
 .best-deals__item-pointer {
   font-size: 42px;
-  display: block;
   width: 30px;
   height: 30px;
   padding: 5px;
+  cursor: pointer;
 }
 
-@media (min-width: 584px) {
-  .best-deals__item {
-    width: calc((100% - 24px) / 2);
+.best-deals__selected-pointer {
+  color: var(--text-bright-color);
+}
+
+.best-deals__unselected-pointer {
+  color: var(--text-dark-color);
+}
+
+@media (min-width: 767px) {
+  .best-deals__information-title {
+    font-size: 21px;
+    line-height: 29.4px;
+  }
+
+  .best-deals__information-slogan {
+    font-size: 41px;
+    letter-spacing: -0.82px;
+    line-height: 53.3px;
+  }
+
+  .best-deals__carousel {
+    grid-template-columns: 20px 1fr 20px;
+  }
+
+  .best-deals__item-name {
+    font-size: 19px;
+    line-height: 27.4436px;
+  }
+
+  .best-deals__item-price {
+    font-size: 19px;
+    line-height: 27.4436px;
+  }
+
+  .best-deals__item-picture {
+    margin-bottom: 25px;
   }
 }
 
-@media (min-width: 848px) {
-  .best-deals__item {
-    width: calc((100% - 48px) / 3);
+@media (min-width: 991px) {
+  .best-deals__information-title {
+    font-size: 28px;
+    line-height: 39.2px;
+  }
+
+  .best-deals__information-slogan {
+    font-size: 48px;
+    letter-spacing: -0.96px;
+    line-height: 62.4px;
+  }
+
+  .best-deals__information-description {
+    margin-bottom: 50px;
+  }
+
+  .best-deals__item-name {
+    font-size: 20px;
+    line-height: 28.888px;
+  }
+
+  .best-deals__item-price {
+    font-size: 20px;
+    line-height: 28.888px;
   }
 }
 
-@media (min-width: 1112px) {
-  .best-deals__item {
-    width: calc((100% - 60px) / 3);
+@media (min-width: 1199px) {
+  .best-deals__carousel {
+    grid-template-columns: 30px 1fr 30px;
   }
 }
