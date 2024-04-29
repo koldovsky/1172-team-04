@@ -11,7 +11,14 @@
     
 
 }
-
+.button__icon_286 {
+    display: inline-block;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+}
 .video__logo-image {
     width: 100%; 
     max-width: 200px; 

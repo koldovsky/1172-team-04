@@ -1,29 +1,63 @@
 .discount {
     background-image: url(../images/index.section-discount/personal-discount-photo.png);
-    background-color: rgba(200, 105, 58, 0.82);
+    background-color: #c8693a;
     background-size: cover;
     background-position: center; 
     height: 50vh;
     display: flex;
     flex-direction: column;
-    justify-content: center; 
-    align-items: center;
+    justify-content: flex-start; 
+    align-items: flex-start;
     min-width: 320px;
     box-sizing: border-box;
     padding-top: 90px;
     padding-bottom: 60px;
-
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    row-gap: 50px;
-    column-gap: 24px;
     max-width: 1200px;
     margin: 0 auto;
-
-}
-
-
-.discount__button{
-    border: 2px solid #fffefe;
-}
+  }
+  
+  .discount__button {
+    border: none;
+    background: none; 
+    padding: 0; 
+    font-size: 1.2em;
+    text-decoration: none; 
+    color: #fffefe; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Розтягуємо кнопку на всю ширину */
+    width: 100px;
+    height: 40px;
+  }
+  
+  .icon-container {
+    margin-left: 10px; 
+  }
+  
+  .discount__button svg {
+    width: 24px;
+    height: auto;
+  }
+  .discount__action {
+    border: 2px solid #fffefe; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    border-radius: 0px; 
+    width: 120px;
+    height: 40px;
+    margin-left: 40px;
+  }
+  
+  .discount__title {
+    margin-left: 40px;
+    margin-top: 50px;
+    font-size: 3em; 
+  }
+  
+  .discount__description {
+    margin-left: 40px;
+    font-size: 1.2em;
+    margin-top: 30px;
+  }
