@@ -21,7 +21,7 @@ const bestDealsWines = [
   },
 ];
 
-function renderBestDealsWine() {
+function renderBestDealsWines() {
   let winesHTML = `<div class="best-deals__item">
         <img
           class="best-deals__item-picture"
@@ -31,12 +31,12 @@ function renderBestDealsWine() {
         <a href="#" class="best-deals__item-name">${
           bestDealsWines[currentWineIdx].name
         }</a>
-        <p class="best-deals__item-price">${bestDealsWines[
-          currentWineIdx
-        ].price.toFixed(2)}USD</p>
+        <p class="best-deals__item-price">${bestDealsWines[currentWineIdx].price
+          .toFixed(2)
+          .replace(".", ",")}USD</p>
         <a class="best-deals__item-button" href="#">Add to cart</a>
       </div>`;
-  if (window.matchMedia("(min-width: 980px)").matches) {
+  if (window.matchMedia("(min-width: 767px)").matches) {
     const secondWineIdx =
       currentWineIdx === bestDealsWines.length - 1 ? 0 : currentWineIdx + 1;
     winesHTML += `<div class="best-deals__item">
@@ -48,12 +48,12 @@ function renderBestDealsWine() {
     <a href="#" class="best-deals__item-name">${
       bestDealsWines[secondWineIdx].name
     }</a>
-    <p class="best-deals__item-price">${bestDealsWines[
-      secondWineIdx
-    ].price.toFixed(2)}USD</p>
+    <p class="best-deals__item-price">${bestDealsWines[secondWineIdx].price
+      .toFixed(2)
+      .replace(".", ",")}USD</p>
     <a class="best-deals__item-button" href="#">Add to cart</a>
   </div>`;
-    if (window.matchMedia("(min-width: 1150px)").matches) {
+    if (window.matchMedia("(min-width: 991px)").matches) {
       const thirdWineIdx =
         secondWineIdx === bestDealsWines.length - 1 ? 0 : secondWineIdx + 1;
       winesHTML += `<div class="best-deals__item">
@@ -65,34 +65,50 @@ function renderBestDealsWine() {
     <a href="#" class="best-deals__item-name">${
       bestDealsWines[thirdWineIdx].name
     }</a>
-    <p class="best-deals__item-price">${bestDealsWines[
-      thirdWineIdx
-    ].price.toFixed(2)}USD</p>
+    <p class="best-deals__item-price">${bestDealsWines[thirdWineIdx].price
+      .toFixed(2)
+      .replace(".", ",")}USD</p>
     <a class="best-deals__item-button" href="#">Add to cart</a>
   </div>`;
     }
   }
   document.querySelector(".best-deals__wines").innerHTML = winesHTML;
+  renderBestDealsItemPointers();
 }
 
 function nextBestDealsWine() {
   currentWineIdx =
     currentWineIdx === bestDealsWines.length - 1 ? 0 : currentWineIdx + 1;
-  renderBestDealsWine();
+  renderBestDealsWines();
 }
 
 function prevBestDealsWine() {
   currentWineIdx =
     currentWineIdx === 0 ? bestDealsWines.length - 1 : currentWineIdx - 1;
-  renderBestDealsWine();
+  renderBestDealsWines();
+}
+
+function renderBestDealsItemPointers() {
+  let pointersHTML = "";
+  for (let i = 0; i < bestDealsWines.length; i++) {
+    pointersHTML += `<div class="best-deals__item-pointer best-deals__${
+      i === currentWineIdx ? "" : "un"
+    }selected-pointer best-deals__click-pointer-${i}">•</div>`;
+  }
+  document.querySelector(".best-deals__item-pointers").innerHTML = pointersHTML;
+}
+
+function changeCurrentWineIdx(index) {
+  currentWineIdx = index;
+  renderBestDealsWines();
 }
 
 let currentWineIdx = 0;
-renderBestDealsWine();
+renderBestDealsWines();
 document
   .querySelector(".best-deals__arrow-left")
   .addEventListener("click", prevBestDealsWine);
 document
   .querySelector(".best-deals__arrow-right")
   .addEventListener("click", nextBestDealsWine);
-window.addEventListener("resize", renderBestDealsWine);
+window.addEventListener("resize", renderBestDealsWines);
