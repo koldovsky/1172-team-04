@@ -16,6 +16,7 @@
     flex-direction: column;
     justify-content: left;
     border-image-repeat: stretch;
+    padding: 25px;
     
 }
 

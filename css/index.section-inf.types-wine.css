@@ -3,15 +3,20 @@
     background-size: cover;
     background-position: right;
     min-height: 567px;
-    padding: 90px 0px;
+    padding: 90px 30px;
     
 }
-.wine-types__stopper.container {
+.wine-types__stopper {
     max-width: 1200px;
     margin:0px auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     
+}
+.stopper {
+    margin:0px auto;
+    min-width:0px;
+    min-height: 0px;
 }
 
 .wine-types__container {
@@ -25,8 +30,8 @@
     font-weight: 400;
     /* padding: 0px 24px; */
     margin:0px auto;
-    width:400px;
-    height: 600px;
+    min-width:400px;
+    min-height: 600px;
     
 }
 
@@ -36,19 +41,19 @@
 }
 
 .wine-types__subtitle {
-    margin-top: 20px;
+    margin-top: 10px;
     font-size: 34px;
 }
 
 .wine-types__decor {
-    margin-top: 25px;
+    margin-top: 15px;
     width: 166px;
     height: 32px;
     justify-content: flex-start;
 }
 
 .wine-types__description {
-    margin-top: 25px;
+    margin-top: 15px;
     font-size: 18px;
     line-height: 30.6px;
     /* відстань між рядками треба збільшити */
@@ -61,12 +66,12 @@
 .wine-types__article-title {
     line-height: 62px;
     height: 62px;
-    margin-top: 25px;
+    margin-top: 15px;
 }
 
 
 .wine-types__list-container {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .wine-types__list {
@@ -87,18 +92,18 @@
 
 }
 
-@media (min-width:600px) {
+@media (min-width:800px) {
     /* .wine-types__stopper.container {  */
         /* display: grid;
         grid-template-columns: 1fr 1fr;
     } */
     .stopper {
         margin:0px auto;
-        width:400px;
-        height: 600px;
+        min-width:200px;
+        min-height: 600px;
     }
 
     .wine-types__subtitle {
-        line-height: 159px;
+        line-height: 80px;
     }
 }
