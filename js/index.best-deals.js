@@ -101,15 +101,11 @@ function renderBestDealsItemPointers() {
       document
         .querySelector(`.best-deals__click-pointer-${i}`)
         .addEventListener("click", () => {
-          setCurrentWineIdx(i);
+          currentWineIdx = i;
+          renderBestDealsWines();
         });
     }
   }
-}
-
-function setCurrentWineIdx(index) {
-  currentWineIdx = index;
-  renderBestDealsWines();
 }
 
 let currentWineIdx = 0;

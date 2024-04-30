@@ -1,7 +1,28 @@
-.confirm-age__container {
+.confirm-age {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 999;
+}
+
+.confirm-age__show {
+  display: block;
+}
+
+.confirm-age__no-scroll {
+  overflow: hidden;
+}
+
+.confirm-age__form {
   text-align: center;
   padding: 80px 24px;
-  min-width: 320px;
+  max-width: 470px;
+  background-color: var(--section-global-background-color);
+  margin: auto;
 }
 
 .confirm-age__title {
@@ -41,9 +62,8 @@
   letter-spacing: 0;
   color: var(--text-bright-color);
   background-color: var(--button-filled-color);
-  border-color: var(--button-filled-color);
   border-radius: 2px;
-  border-style: solid;
+  border-style: none;
   padding: 15px 25px;
   cursor: pointer;
   text-decoration: none;
