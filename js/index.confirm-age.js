@@ -14,7 +14,7 @@ function hideConfirmAge() {
 }
 
 function confirmAgeAnswerYes() {
-  sessionStorage.setItem("ageConfirmed", true);
+  //  sessionStorage.setItem("ageConfirmed", true);
   hideConfirmAge();
 }
 
@@ -25,5 +25,5 @@ function confirmAgeAnswerNo() {
 if (sessionStorage.getItem("ageConfirmed") !== "true") {
   showConfirmAge();
   confirmAgeButtonYes.addEventListener("click", confirmAgeAnswerYes);
-  confirmAgeButtonYes.addEventListener("click", confirmAgeAnswerNo);
+  confirmAgeButtonNo.addEventListener("click", confirmAgeAnswerNo);
 }
