@@ -1,43 +1,88 @@
-.video{
+.video {
     background-image: url(../images/index.section-video/video-veritas-photo.png);
-    background-size: cover; 
-    background-position: center; 
-    height: 100vh; 
-    display: flex; 
-    flex-direction: column;
-    justify-content: center; 
-    align-items: center;
-    position: relative;
-    
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
 
+.video__d {
+    height: 50vh;
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start;
+    align-items: flex-start;
+    box-sizing: border-box;
 }
-.button__icon_286 {
-    display: inline-block;
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    top: 50%;
-    transform: translateY(-50%);
+
+
+.video__img-playvideo {
+    display: flex;
+    flex-direction: column;
+    min-width: 80px;
+    order: -1; 
 }
+
+.video__content {
+    font-size: 0.8em;
+    max-width: 350px;
+}
+
+.video__title__d {
+    max-width: 350px;
+    margin-bottom: 40px;
+}
+
 .video__logo-image {
-    width: 100%; 
-    max-width: 200px; 
-    height: auto; 
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 20px;
 }
-.video{
+
+.video {
     position: relative;
     justify-content: center;
     flex-direction: column;
-    align-items: flex-start ; 
+    align-items: flex-start;
     padding: 0 24px;
 }
 
 .video__title {
-    font-size: 50px ;
+    font-size: 30px;
 }
-.video__subtitle{
+
+.video__subtitle {
     font-size: 70px;
 }
-.video__description{
+
+.video__description {
     font-size: 20px;
+}
+
+.video__icon-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #fffefe;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.video__icon-link:hover {
+    text-decoration: underline;
+}
+
+.video__icon-link-text {
+    font-size: 15px;
+    color: var(--text-bright-color);
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+.video__icon-link-arrow {
+    width: 24px;
+    height: 24px;
 }
