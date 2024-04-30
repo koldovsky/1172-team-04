@@ -96,9 +96,18 @@ function renderBestDealsItemPointers() {
     }selected-pointer best-deals__click-pointer-${i}">•</div>`;
   }
   document.querySelector(".best-deals__item-pointers").innerHTML = pointersHTML;
+  for (let i = 0; i < bestDealsWines.length; i++) {
+    if (i !== currentWineIdx) {
+      document
+        .querySelector(`.best-deals__click-pointer-${i}`)
+        .addEventListener("click", () => {
+          setCurrentWineIdx(i);
+        });
+    }
+  }
 }
 
-function changeCurrentWineIdx(index) {
+function setCurrentWineIdx(index) {
   currentWineIdx = index;
   renderBestDealsWines();
 }
