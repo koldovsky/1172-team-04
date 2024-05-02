@@ -1,15 +1,15 @@
-button {
-    background-color: var(--button-filled-color);
-    border: none;
-    padding: 15px 25px;
-    color: var(--button-blank-color);
-    font-weight: bold;
-    border-radius: 2px;
-    cursor: pointer;
-    font-size: 14px;
-    letter-spacing: 1px;
+.my-custom-button {
+  background-color: var(--button-filled-color);
+  border: none;
+  padding: 15px 25px;
+  color: var(--button-blank-color);
+  font-weight: bold;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 14px;
+  letter-spacing: 1px;
 }
 
-button:hover {
-    background-color: var(--button-filled-color);
+.my-custom-button:hover {
+  background-color: var(--button-filled-color);
 }
