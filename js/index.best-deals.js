@@ -1,111 +1,126 @@
+import { addToCart } from "./common.cart-widget.js";
+
 const bestDealsWines = [
   {
+    id: "1",
     name: "Cabernet",
     price: 17.0,
     image: "images/index.best-deals/best-deals-cabernet.jpeg",
+    link: "cabernet",
   },
   {
+    id: "2",
     name: "Sauvignon Blanc",
     price: 12.0,
     image: "images/index.best-deals/best-deals-sauvignon-blanc.jpeg",
+    link: "sauvignon-blanc",
   },
   {
+    id: "3",
     name: "Syrah",
     price: 13.0,
     image: "images/index.best-deals/best-deals-syrah.jpeg",
+    link: "syrah",
   },
   {
+    id: "4",
     name: "Pinot Grigio",
     price: 10.0,
     image: "images/index.best-deals/best-deals-pinot-grigio.jpeg",
+    link: "pinot-grigio",
   },
 ];
 
+function getNextIdx(index) {
+  return index === bestDealsWines.length - 1 ? 0 : index + 1;
+}
+
+function getPrevIdx(index) {
+  return index === 0 ? bestDealsWines.length - 1 : index - 1;
+}
+
+function getBestDealsWineHTML(index) {
+  const wine = bestDealsWines[index];
+  const wineURL = `shop/${wine.link}`;
+  return `<div class="best-deals__item"><a href="${wineURL}"><img class="best-deals__item-picture" src="${
+    wine.image
+  }" alt="${wine.name}"></a>
+  <a href="${wineURL}" class="best-deals__item-name">${wine.name}</a>
+  <p class="best-deals__item-price">${wine.price
+    .toFixed(2)
+    .replace(".", ",")}USD</p>
+  <button class="best-deals__item-button best-deals__add-wine-${
+    wine.id
+  }">Add to cart</button></div>`;
+}
+
 function renderBestDealsWines() {
-  let winesHTML = `<div class="best-deals__item">
-        <img
-          class="best-deals__item-picture"
-          src="${bestDealsWines[currentWineIdx].image}"
-          alt="${bestDealsWines[currentWineIdx].name}"
-        />
-        <a href="#" class="best-deals__item-name">${
-          bestDealsWines[currentWineIdx].name
-        }</a>
-        <p class="best-deals__item-price">${bestDealsWines[currentWineIdx].price
-          .toFixed(2)
-          .replace(".", ",")}USD</p>
-        <a class="best-deals__item-button" href="#">Add to cart</a>
-      </div>`;
+  let winesHTML = getBestDealsWineHTML(currentWineIdx);
+  let secondWineIdx;
+  let thirdWineIdx;
   if (window.matchMedia("(min-width: 767px)").matches) {
-    const secondWineIdx =
-      currentWineIdx === bestDealsWines.length - 1 ? 0 : currentWineIdx + 1;
-    winesHTML += `<div class="best-deals__item">
-    <img
-      class="best-deals__item-picture"
-      src="${bestDealsWines[secondWineIdx].image}"
-      alt="${bestDealsWines[secondWineIdx].name}"
-    />
-    <a href="#" class="best-deals__item-name">${
-      bestDealsWines[secondWineIdx].name
-    }</a>
-    <p class="best-deals__item-price">${bestDealsWines[secondWineIdx].price
-      .toFixed(2)
-      .replace(".", ",")}USD</p>
-    <a class="best-deals__item-button" href="#">Add to cart</a>
-  </div>`;
-    if (window.matchMedia("(min-width: 991px)").matches) {
-      const thirdWineIdx =
-        secondWineIdx === bestDealsWines.length - 1 ? 0 : secondWineIdx + 1;
-      winesHTML += `<div class="best-deals__item">
-    <img
-      class="best-deals__item-picture"
-      src="${bestDealsWines[thirdWineIdx].image}"
-      alt="${bestDealsWines[thirdWineIdx].name}"
-    />
-    <a href="#" class="best-deals__item-name">${
-      bestDealsWines[thirdWineIdx].name
-    }</a>
-    <p class="best-deals__item-price">${bestDealsWines[thirdWineIdx].price
-      .toFixed(2)
-      .replace(".", ",")}USD</p>
-    <a class="best-deals__item-button" href="#">Add to cart</a>
-  </div>`;
-    }
+    secondWineIdx = getNextIdx(currentWineIdx);
+    winesHTML += getBestDealsWineHTML(secondWineIdx);
+  }
+  if (window.matchMedia("(min-width: 991px)").matches) {
+    thirdWineIdx = getNextIdx(secondWineIdx);
+    winesHTML += getBestDealsWineHTML(thirdWineIdx);
   }
   document.querySelector(".best-deals__wines").innerHTML = winesHTML;
-  renderBestDealsItemPointers();
+  addBestDealsWineButtonEvent(currentWineIdx);
+  if (secondWineIdx) {
+    addBestDealsWineButtonEvent(secondWineIdx);
+  }
+  if (thirdWineIdx) {
+    addBestDealsWineButtonEvent(thirdWineIdx);
+  }
+  renderBestDealsWinePointers();
 }
 
 function nextBestDealsWine() {
-  currentWineIdx =
-    currentWineIdx === bestDealsWines.length - 1 ? 0 : currentWineIdx + 1;
+  currentWineIdx = getNextIdx(currentWineIdx);
   renderBestDealsWines();
 }
 
 function prevBestDealsWine() {
-  currentWineIdx =
-    currentWineIdx === 0 ? bestDealsWines.length - 1 : currentWineIdx - 1;
+  currentWineIdx = getPrevIdx(currentWineIdx);
   renderBestDealsWines();
 }
 
-function renderBestDealsItemPointers() {
+function getBestDealsWinePointersHTML() {
   let pointersHTML = "";
   for (let i = 0; i < bestDealsWines.length; i++) {
-    pointersHTML += `<div class="best-deals__item-pointer best-deals__${
-      i === currentWineIdx ? "" : "un"
-    }selected-pointer best-deals__click-pointer-${i}">•</div>`;
+    pointersHTML += `<div class="best-deals__item-pointer ${
+      i === currentWineIdx ? "best-deals__selected-pointer" : ""
+    } best-deals__click-pointer-${i}">•</div>`;
   }
-  document.querySelector(".best-deals__item-pointers").innerHTML = pointersHTML;
+  return pointersHTML;
+}
+
+function addBestDealsWinePointersEvents() {
   for (let i = 0; i < bestDealsWines.length; i++) {
     if (i !== currentWineIdx) {
-      document
-        .querySelector(`.best-deals__click-pointer-${i}`)
-        .addEventListener("click", () => {
-          currentWineIdx = i;
-          renderBestDealsWines();
-        });
+      const pointer = document.querySelector(`.best-deals__click-pointer-${i}`);
+      pointer.addEventListener("click", () => {
+        currentWineIdx = i;
+        renderBestDealsWines();
+      });
     }
   }
+}
+
+function renderBestDealsWinePointers() {
+  document.querySelector(".best-deals__item-pointers").innerHTML =
+    getBestDealsWinePointersHTML();
+  addBestDealsWinePointersEvents();
+}
+
+function addBestDealsWineButtonEvent(index) {
+  const wine = bestDealsWines[index];
+  const button = document.querySelector(`.best-deals__add-wine-${wine.id}`);
+  button.addEventListener("click", () => {
+    addToCart(wine.id, 1);
+  });
 }
 
 let currentWineIdx = 0;

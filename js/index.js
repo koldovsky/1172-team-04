@@ -2,6 +2,7 @@ function init() {
   import("./index.section-faq.js");
   import("./index.best-deals.js");
   import("./index.confirm-age.js");
+  import("./common.cart-widget.js");
 }
 
 const totalPartials = document.querySelectorAll(

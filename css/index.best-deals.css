@@ -120,19 +120,19 @@
 }
 
 .best-deals__item-pointer {
+  color: var(--text-dark-color);
   font-size: 42px;
   width: 30px;
   height: 30px;
   padding: 5px;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .best-deals__selected-pointer {
   color: var(--text-bright-color);
-}
-
-.best-deals__unselected-pointer {
-  color: var(--text-dark-color);
 }
 
 @media (min-width: 767px) {
