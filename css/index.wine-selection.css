@@ -60,6 +60,7 @@
     line-height: 26px;
     margin-bottom: 25px;
 }
+
 .wine-item button {
     font: Rubik, sans-serif;
     font-size: 15px;
@@ -77,42 +78,42 @@
 
 @media (max-width: 768px) {
     .wine-container {
-      flex-wrap: wrap;
+        flex-wrap: wrap;
     }
     .wine-item {
-      width: 50%; 
+        width: 50%;
     }
     .wine-item img {
-      max-width: 90%;
-      height: auto;
-      display: block;
-      margin: 0 auto; 
+        max-width: 90%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
     }
     .wine-item button {
-      padding: 10px 20px; 
+        padding: 10px 20px;
     }
     .title-container h2 {
-      font-size: 1.2em; 
+        font-size: 1.2em;
     }
-  }
-  
-  @media (max-width: 480px) {
+}
+
+@media (max-width: 480px) {
     .wine-container {
-      flex-direction: column;
+        flex-direction: column;
     }
     .wine-item {
-      width: 100%; 
+        width: 100%;
     }
     .wine-item img {
-      max-width: 80%; 
+        max-width: 80%;
     }
     .wine-heading {
-      font-size: 28px;
+        font-size: 28px;
     }
     .wine-description {
-      font-size: 16px; 
+        font-size: 16px;
     }
     .wine-item button {
-      padding: 12px 24px; 
+        padding: 12px 24px;
     }
-  }
+}
