@@ -68,9 +68,10 @@
     }
     .wine-category {
         width: calc(100% - 20px); 
+        min-height: 500px;
     }
     .wine-category__title {
-        margin-top: 10px; 
+        margin-top: 150px; 
     }
 }
 
