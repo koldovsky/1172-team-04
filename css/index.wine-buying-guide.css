@@ -1,5 +1,6 @@
 .background-wine-buying-guide {
-    background-image: url("../images/index.wine-buying-guide/backround.jpg");
+    background:linear-gradient(rgba(95, 80, 44, 0.354), rgba(0,0,0,0.5)), 
+    url("../images/index.wine-buying-guide/backround.jpg");
     background-size: cover;
     background-attachment: fixed;
     position: relative;
