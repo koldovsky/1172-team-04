@@ -9,6 +9,8 @@
   flex-direction: column;
   align-items: center;
   padding: 0 24px;
+  max-width: 1200px;
+  min-width: 320px;
 }
 
 .faq__title,
@@ -89,7 +91,7 @@
   font-size: 22px;
   cursor: pointer;
   position: relative;
-  transition: all 0.4s ease-out;
+  transition: height .3s ease, margin-top .3s ease;
   border-bottom: 1px solid #898082;
 }
 
@@ -159,6 +161,7 @@
   .faq__all {
     padding: 0 15px;
     margin: 0 40px;
+    align-items: stretch;
   }
   .faq__questions {
     flex-basis: calc(100% * 7 / 12);
@@ -169,4 +172,3 @@
     max-width: calc(100% * 5 / 12);
   }
 }
-
