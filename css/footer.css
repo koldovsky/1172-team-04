@@ -1,0 +1,21 @@
+.footer-copyrights--block {
+  background-color: var(--footer-copyrights-background-color);
+  display: flex;
+  justify-content: center;
+}
+
+.footer-text--blocks {
+  max-width: 1170px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.w-text--block {
+  font-size: small;
+  padding: 15px;
+  min-width: 230px;
+  text-align: center;
+}
