@@ -45,6 +45,18 @@
   /* padding: 15px; */
 }
 
+.instagram-pictures-picture {
+  width: 75px; 
+  height: 75px; 
+  margin: 6px 6px 0 0 ;
+}
+.instagram-pictures--container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 248px;
+}
+
+
 
 .footer-copyrights--block {
   background-color: var(--footer-copyrights-background-color);
