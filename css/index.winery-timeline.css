@@ -2,7 +2,7 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
-  padding-bottom: 120px;
+  padding-bottom: 100px;
 }
 
 .timeline__container {
@@ -28,13 +28,16 @@
 .timeline__entry {
   margin-bottom: 20px;
   padding: 10px;
+  padding-top: 25px;
   width: 90%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
-.timeline__date, .timeline__title, .timeline__description {
+.timeline__date,
+.timeline__title,
+.timeline__description {
   width: 100%;
 }
 
@@ -45,7 +48,13 @@
 
 .timeline__title {
   font-size: 22px;
-  margin-bottom: 15px;
+}
+
+.custom-divider {
+  width: 15%;
+  height: 2px;
+  background-color: #c8693a;
+  margin: 15px 0;
 }
 
 .timeline__description {
