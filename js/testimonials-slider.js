@@ -1,28 +1,30 @@
-document.addEventListener("DOMContentLoaded", function () {
+window.onload = function () {
   const prevButton = document.querySelector(".testimonials__button--prev");
   const nextButton = document.querySelector(".testimonials__button--next");
-  const testimonialsItems = document.querySelectorAll(".testimonials__item");
+
+  if (!prevButton || !nextButton) {
+    console.error("Кнопки не знайдені!");
+    return;
+  }
+
+  const testimonialsItems = Array.from(document.querySelectorAll(".testimonials__item"));
   let currentItem = 0;
 
-  function updateTestimonialDisplay(index) {
-    testimonialsItems.forEach((item, idx) => {
-      if (idx === index) {
-        item.style.display = "block";
-      } else {
-        item.style.display = "none";
-      }
+  function updateTestimonialDisplay() {
+    testimonialsItems.forEach((item, index) => {
+      item.style.display = index === currentItem ? "block" : "none";
     });
   }
 
-  prevButton.addEventListener("click", () => {
-    currentItem = (currentItem - 1 + testimonialsItems.length) % testimonialsItems.length;
-    updateTestimonialDisplay(currentItem);
-  });
+  prevButton.onclick = function () {
+    currentItem = (currentItem + testimonialsItems.length - 1) % testimonialsItems.length;
+    updateTestimonialDisplay();
+  };
 
-  nextButton.addEventListener("click", () => {
+  nextButton.onclick = function () {
     currentItem = (currentItem + 1) % testimonialsItems.length;
-    updateTestimonialDisplay(currentItem);
-  });
+    updateTestimonialDisplay();
+  };
 
-  updateTestimonialDisplay(currentItem); // Initialize display
-});
+  updateTestimonialDisplay();
+};

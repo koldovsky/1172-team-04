@@ -73,11 +73,11 @@
 }
 
 .testimonials__button--prev {
-  left: 25%;
+  left: 20%;
   transform: translateX(-100%) translateY(-50%);
 }
 
 .testimonials__button--next {
-  right: 25%;
+  right: 20%;
   transform: translateX(50%) translateY(-50%);
 }
