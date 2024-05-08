@@ -1,6 +1,7 @@
 window.onload = function () {
   const prevButton = document.querySelector(".testimonials__button--prev");
   const nextButton = document.querySelector(".testimonials__button--next");
+  const dots = document.querySelectorAll(".dot");
 
   if (!prevButton || !nextButton) {
     console.error("Кнопки не знайдені!");
@@ -14,6 +15,12 @@ window.onload = function () {
     testimonialsItems.forEach((item, index) => {
       item.style.display = index === currentItem ? "block" : "none";
     });
+    dots.forEach((dot, index) => {
+      dot.className = dot.className.replace(" active", "");
+      if (index === currentItem) {
+        dot.className += " active";
+      }
+    });
   }
 
   prevButton.onclick = function () {
@@ -25,6 +32,13 @@ window.onload = function () {
     currentItem = (currentItem + 1) % testimonialsItems.length;
     updateTestimonialDisplay();
   };
+
+  dots.forEach((dot, index) => {
+    dot.onclick = function () {
+      currentItem = index;
+      updateTestimonialDisplay();
+    };
+  });
 
   updateTestimonialDisplay();
 };
