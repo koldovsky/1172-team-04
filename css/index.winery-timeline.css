@@ -13,18 +13,28 @@
 .timeline__image-container {
   width: 100%;
   margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 .timeline__image {
   width: 100%;
   height: auto;
   display: block;
+  max-width: 1200px;
 }
 
 .timeline__entry {
   margin-bottom: 20px;
   padding: 10px;
   width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.timeline__date, .timeline__title, .timeline__description {
+  width: 100%;
 }
 
 .timeline__date {
@@ -43,6 +53,13 @@
   line-height: 1.5;
 }
 
+@media (max-width: 767px) {
+  .timeline__entry {
+    width: 100%;
+    padding: 8px;
+  }
+}
+
 @media (min-width: 768px) {
   .timeline__container {
     flex-direction: row;
@@ -57,6 +74,6 @@
 
 @media (min-width: 1024px) {
   .timeline__entry {
-    width: 22%;
+    width: 23%;
   }
 }
