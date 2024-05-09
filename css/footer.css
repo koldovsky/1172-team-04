@@ -24,8 +24,8 @@
   }
 
   .instagram-pictures-picture {
-    width: 76px;
-    height: 76px;
+    max-width: 76px;
+    max-height:  76px;
     margin: 6px 6px 0 0;
   }
 
@@ -62,8 +62,10 @@
   }
 
   .instagram-pictures-picture {
-    width: 252px;
-    height: 252px;
+    min-width: 252px;
+    max-width: 512px;
+    min-height: 252px;
+    max-height: 512px;
     margin: 20px;
   }
 }
