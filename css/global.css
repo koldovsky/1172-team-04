@@ -1,55 +1,55 @@
-  @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Prata&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
-  @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Prata&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css");
 
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  :root {
-    --text-bright-color: #ffffff;
-    --text-dark-color: #898082;
-    --ui-dark-shade-color: #212736;
-    --ui-brand-color: rgb(200, 105, 58);
-    --icon-color: #c8693a;
-    --icon-background-dark-color: #211b18;
-    --icon-background-light-color: #342e2e;
-    --input-text-background-color: #25211f;
-    --decor-elements-color: #c8693a;
-    --section-title-color: #c8693a;
-    --button-filled-color: #c8693a;
-    --button-filled-color-hover: #b45e34;
-    --button-blank-color: #ffffff;
-    --section-global-background-color: #261e1c;
-    --section-timeless-background-color: #241917;
-    --section-join-background-color: #1a1512;
-    --footer-contacts-background-color: #1b1613;
-    --footer-copyrights-background-color: #130f0e;
-    --wine-types-color: rgb(137, 128, 130);
-    font-family: "Rubik", sans-serif;
-    font-weight: 400;
-    scroll-behavior: smooth;
-    color: var(--text-bright-color);
-    background-color: var(--section-global-background-color);
-  }
+:root {
+  --text-bright-color: #ffffff;
+  --text-dark-color: #898082;
+  --ui-dark-shade-color: #212736;
+  --ui-brand-color: rgb(200, 105, 58);
+  --icon-color: #c8693a;
+  --icon-background-dark-color: #211b18;
+  --icon-background-light-color: #342e2e;
+  --input-text-background-color: #25211f;
+  --decor-elements-color: #c8693a;
+  --section-title-color: #c8693a;
+  --button-filled-color: #c8693a;
+  --button-filled-color-hover: #b45e34;
+  --button-blank-color: #ffffff;
+  --section-global-background-color: #261e1c;
+  --section-timeless-background-color: #241917;
+  --section-join-background-color: #1a1512;
+  --footer-contacts-background-color: #1b1613;
+  --footer-copyrights-background-color: #130f0e;
+  --wine-types-color: rgb(137, 128, 130);
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  scroll-behavior: smooth;
+  color: var(--text-bright-color);
+  background-color: var(--section-global-background-color) !important;
+}
 
-  h1,
-  h3,
-  h4 {
-    font-family: "Prata", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
+h1,
+h3,
+h4 {
+  font-family: "Prata", serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
-  h2 {
-    font-family: "Great Vibes", cursive;
-    font-weight: 400;
-    font-style: normal;
-    color: var(--section-title-color);
-  }
+h2 {
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--section-title-color);
+}
 
-  img {
-    display: block;
-    width: 100%;
-  }
+img {
+  display: block;
+  width: 100%;
+}
