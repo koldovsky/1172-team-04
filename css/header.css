@@ -5,12 +5,21 @@
 
 }
 
-@media (min-width: 1201px) {
+@media (min-width: 1200px) {
     .horizontal-flow {
         min-width: 1200px;
         display: flex;
         align-items: center;
         justify-content: space-between;
+      }
+}
+
+@media (max-width: 1199px) {
+    .horizontal-flow {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
       }
 }
 
