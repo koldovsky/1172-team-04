@@ -6,6 +6,7 @@
     background-attachment: fixed;
     width: 100%;
     height: auto;
+    min-width: 320px;
 }
 
 .hero-section__container {
@@ -15,9 +16,10 @@
     padding-bottom: 130px;
     display: flex;
     flex-direction: column;
-    justify-content: left;
+    justify-content: center;
     border-image-repeat: stretch;
     padding: 25px;
+    
     
 }
 
@@ -28,7 +30,7 @@
 }
 
 .hero-section__title {
-    font-size: 58px;
+    font-size: 2.2rem;
     text-align: left;
     margin: 20px 0px 0px 0px;
     font-weight: 400;
@@ -46,7 +48,7 @@
 .hero-section__nav,
 .hero-section__description {
     display: flex;
-    font-size: 18px;
+    font-size: 1.2rem;
     text-align: left;
     margin: 20px 0px 0px 0px;
     color:#fefeff;
@@ -54,6 +56,8 @@
 .hero-section__nav {
     flex-direction:column; 
     margin: 35px 0px 0px 0px;
+    font-weight: 700;
+    
 }
 
 .hero-section__first_but {
@@ -68,11 +72,13 @@
     box-sizing: border-box;
     overflow: hidden;
     margin: 0 0 20px 0px;
+    
+
 }
 
 .hero-section__button {
     font-family: arial;
-    font-size: 16px;
+    font-size: 1rem;
     color: #fefeff;
     text-decoration: none;
     line-height: 50px;
@@ -110,11 +116,12 @@
     box-sizing: border-box;
     overflow: hidden;
     margin: 0 0 20px 0px;
+    
 }
 
 .hero-section__sec-button {
     font-family: arial;
-    font-size: 16px;
+    font-size: 1rem;
     color: #fff;
     text-decoration: none;
     line-height: 50px;
@@ -144,7 +151,6 @@
 @media (min-width:800px) {
     .hero-section__container {
         align-items: last baseline;
-        /* padding-right: 180px; */
         padding-top: 215px;
         padding-bottom: 250px;
         display: flex;
@@ -159,11 +165,10 @@
 
     .hero-section__title {
         font-optical-sizing:auto;
-        font-size: 84px;
+        font-size: 5.25rem;
     }
 
     .hero-section__image {
-        /* width: 200px; */
         max-width: 200px;
         width: 100%;
         min-height: 32px;
