@@ -1,0 +1,30 @@
+[
+  {
+    "id": "1",
+    "name": "Cabernet",
+    "price": 17.0,
+    "image": "images/index.best-deals/best-deals-cabernet.jpeg",
+    "link": "cabernet"
+  },
+  {
+    "id": "2",
+    "name": "Sauvignon Blanc",
+    "price": 12.0,
+    "image": "images/index.best-deals/best-deals-sauvignon-blanc.jpeg",
+    "link": "sauvignon-blanc"
+  },
+  {
+    "id": "3",
+    "name": "Syrah",
+    "price": 13.0,
+    "image": "images/index.best-deals/best-deals-syrah.jpeg",
+    "link": "syrah"
+  },
+  {
+    "id": "4",
+    "name": "Pinot Grigio",
+    "price": 10.0,
+    "image": "images/index.best-deals/best-deals-pinot-grigio.jpeg",
+    "link": "pinot-grigio"
+  }
+]
