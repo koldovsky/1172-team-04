@@ -2,6 +2,7 @@
     display: flex;
     justify-content: center;
     background-color: var(--footer-copyrights-background-color);
+    min-width: 320px;
 
 }
 
